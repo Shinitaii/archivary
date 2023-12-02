@@ -1,4 +1,6 @@
-﻿using Archivary.PARENT_FORMS;
+﻿//using Archivary.MAIN_FORMS;
+using Archivary.MAIN_FORMS;
+using Archivary.PARENT_FORMS;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -70,6 +72,20 @@ namespace Archivary
         private void panel_libraryButton_MouseClick(object sender, MouseEventArgs e)
         {
 
+        }
+
+        private void libraryTemporary_Button_Click(object sender, EventArgs e)
+        {
+           FORM_LIBRARY lIBRARY = new FORM_LIBRARY();
+            lIBRARY.Show();
+            this.Close();
+        }
+
+        private void settings_TemporaryButton_Click(object sender, EventArgs e)
+        {
+            FORM_SETTINGS SETTINGS = new FORM_SETTINGS();
+            SETTINGS.Show();
+            this.Close();
         }
     }
 }
