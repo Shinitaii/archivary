@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Archivary._1500X1000.FORM_LIBRARY;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -18,15 +19,7 @@ namespace Archivary.PARENT_FORMS
             InitializeComponent();
         }
 
-        private void libraryFilterComboBox_OnSelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void AddBookButton_Click(object sender, EventArgs e)
-        {
-
-        }
+        
        
 
         private void FORM_LIBRARY_Load(object sender, EventArgs e)
@@ -50,16 +43,7 @@ namespace Archivary.PARENT_FORMS
             }
         }
 
-        private void booksContainer_flowLayoutPanel_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void panel5_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
+        
         private void searchBookTextBox_Click(object sender, EventArgs e)
         {
 
@@ -68,6 +52,37 @@ namespace Archivary.PARENT_FORMS
         private void LAYOUT_TOP_Paint(object sender, PaintEventArgs e)
         {
 
+        }
+
+        private void bookCotainer_FlowLayoutPanel_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        
+        private void addBookButton_Click_1(object sender, EventArgs e)
+        {
+            using (FORM_BOOKADD popupAdd = new FORM_BOOKADD())
+            {
+                popupAdd.ShowInTaskbar = false;
+                DialogResult result = popupAdd.ShowDialog();
+            }
+        }
+
+       
+
+        private void booksContainerFlowPanel_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void viewBookButton_Click_1(object sender, EventArgs e)
+        {
+            using (FORM_BOOKINFO popupInfo = new FORM_BOOKINFO())
+            {
+                popupInfo.ShowInTaskbar = false;
+                DialogResult result = popupInfo.ShowDialog();
+            }
         }
     }
 }

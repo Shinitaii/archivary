@@ -1,4 +1,5 @@
 ﻿//using Archivary.MAIN_FORMS;
+using Archivary._1500X1000.FORM_LIBRARY;
 using Archivary.MAIN_FORMS;
 using Archivary.PARENT_FORMS;
 using System;
@@ -76,15 +77,37 @@ namespace Archivary
 
         private void libraryTemporary_Button_Click(object sender, EventArgs e)
         {
-           FORM_LIBRARY lIBRARY = new FORM_LIBRARY();
-            lIBRARY.Show();
             this.Close();
+            FORM_LIBRARY lIBRARY = new FORM_LIBRARY();
+            lIBRARY.Show();
+            
         }
 
         private void settings_TemporaryButton_Click(object sender, EventArgs e)
         {
             FORM_SETTINGS SETTINGS = new FORM_SETTINGS();
             SETTINGS.Show();
+            this.Close();
+        }
+
+        private void roundedButton1_Click(object sender, EventArgs e)
+        {
+           FORM_BOOKINFO INFO = new FORM_BOOKINFO();
+            INFO.Show();
+            this.Close();
+        }
+
+        private void roundedButton2_Click(object sender, EventArgs e)
+        {
+            FORM_BOOKEDIT EFIT = new FORM_BOOKEDIT();
+            EFIT.Show();
+            this.Close();
+        }
+
+        private void bookAdd_TemporaryButton_Click(object sender, EventArgs e)
+        {
+            FORM_BOOKADD ADD = new FORM_BOOKADD();
+            ADD.Show();
             this.Close();
         }
     }

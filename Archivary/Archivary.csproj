@@ -209,6 +209,12 @@
     <EmbeddedResource Include="1500X1000\FORM_LIBRARY\FORM_BOOKADD.resx">
       <DependentUpon>FORM_BOOKADD.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="1500X1000\FORM_LIBRARY\FORM_BOOKEDIT.resx">
+      <DependentUpon>FORM_BOOKEDIT.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="1500X1000\FORM_LIBRARY\FORM_BOOKINFO.resx">
+      <DependentUpon>FORM_BOOKINFO.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FORM_ROOT.resx">
       <DependentUpon>FORM_ROOT.cs</DependentUpon>
     </EmbeddedResource>
@@ -229,6 +235,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="MAIN FORMS\FORM_TITLE.resx">
       <DependentUpon>FORM_TITLE.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MAIN FORMS\FORM_USERS.resx">
+      <DependentUpon>FORM_USERS.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

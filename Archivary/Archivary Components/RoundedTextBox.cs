@@ -10,6 +10,12 @@ using System.ComponentModel;
 
 namespace WHYWHYWHYW
 {
+    public enum TextAlign
+    {
+        Left,
+        Center,
+        Right
+    }
     public class RoundedTextBox: Control
     {
         private int radius = 15;
@@ -17,7 +23,60 @@ namespace WHYWHYWHYW
         private GraphicsPath shape;
         private GraphicsPath innerRect;
         private Color br;
+        private bool useSystemPasswordChar = false;
+        private string originalText = string.Empty;
+        private bool originalUseSystemPasswordChar;
+        
+        private TextAlign textAlign = TextAlign.Left;
 
+        public TextAlign TextAlign
+        {
+            get => textAlign;
+            set
+            {
+                textAlign = value;
+                ApplyTextAlignment();
+            }
+        }
+        private void ApplyTextAlignment()
+        {
+            switch (textAlign)
+            {
+                case TextAlign.Left:
+                    textBox.TextAlign = HorizontalAlignment.Left;
+                    break;
+                case TextAlign.Center:
+                    textBox.TextAlign = HorizontalAlignment.Center;
+                    break;
+                case TextAlign.Right:
+                    textBox.TextAlign = HorizontalAlignment.Right;
+                    break;
+            }
+        }
+        public bool UseSystemPasswordChar
+        {
+            get => useSystemPasswordChar;
+            set
+            {
+                if (useSystemPasswordChar != value)
+                {
+                    useSystemPasswordChar = value;
+                    if (useSystemPasswordChar)
+                    {
+                        originalText = textBox.Text;
+                        originalUseSystemPasswordChar = textBox.UseSystemPasswordChar;
+                        textBox.UseSystemPasswordChar = true;
+                        textBox.PasswordChar = '\0'; // Reset PasswordChar to default
+                    }
+                    else
+                    {
+                        textBox.UseSystemPasswordChar = originalUseSystemPasswordChar;
+                        textBox.Text = originalText;
+                        originalText = string.Empty;
+                    }
+                }
+            }
+        }
         public int Radius
         {
             get => radius;

@@ -55,6 +55,7 @@ namespace RoundedCorners
         {
             //InitializeComponent();
             SetStyle(ControlStyles.AllPaintingInWmPaint | ControlStyles.UserPaint | ControlStyles.OptimizedDoubleBuffer, true);
+            ResizeRedraw = true;
         }
 
         protected override void OnPaint(PaintEventArgs e)
@@ -64,12 +65,16 @@ namespace RoundedCorners
             Graphics g = e.Graphics;
             g.SmoothingMode = SmoothingMode.AntiAlias;
 
+            int diameter = radius * 2;
+            int width = Width - 1;
+            int height = Height - 1;
+
             // Create a rounded rectangle path
             GraphicsPath path = new GraphicsPath();
-            path.AddArc(0, 0, radius * 2, radius * 2, 180, 90);
-            path.AddArc(Width - radius * 2, 0, radius * 2, radius * 2, 270, 90);
-            path.AddArc(Width - radius * 2, Height - radius * 2, radius * 2, radius * 2, 0, 90);
-            path.AddArc(0, Height - radius * 2, radius * 2, radius * 2, 90, 90);
+            path.AddArc(0, 0, diameter, diameter, 180, 90);
+            path.AddArc(width - diameter, 0, diameter, diameter, 270, 90);
+            path.AddArc(width - diameter, height - diameter, diameter, diameter, 0, 90);
+            path.AddArc(0, height - diameter, diameter, diameter, 90, 90);
             path.CloseFigure();
 
             // Draw background
@@ -78,10 +83,15 @@ namespace RoundedCorners
             // Draw border
             using (Pen borderPen = new Pen(borderColor, borderWidth))
             {
-                borderPen.Alignment = PenAlignment.Inset;
+                borderPen.Alignment = PenAlignment.Center;
                 g.DrawPath(borderPen, path);
             }
         }
 
+        protected override void OnSizeChanged(EventArgs e)
+        {
+            base.OnSizeChanged(e);
+            Invalidate();
+        }
     }
 }
