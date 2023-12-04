@@ -35,7 +35,5 @@ namespace Archivary.PARENT_FORMS
         {
             FormsRoot.loadParentForm(new FORM_TITLE(FormsRoot));
         }
-
-        
     }
 }

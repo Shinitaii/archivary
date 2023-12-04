@@ -16,13 +16,5 @@ namespace Archivary.PARENT_FORMS
         {
             InitializeComponent();
         }
-
-        private void roundedTextBox1_Enter(object sender, EventArgs e)
-        {
-            if(roundedTextBox1.Text == "unfair")
-            {
-                roundedTextBox1.Text = string.Empty;
-            }
-        }
     }
 }
