@@ -16,5 +16,15 @@ namespace Archivary.PARENT_FORMS
         {
             InitializeComponent();
         }
+
+        private void FORM_USERS_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void LAYOUT_TOP2_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

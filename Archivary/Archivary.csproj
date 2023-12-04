@@ -118,10 +118,18 @@
     <Compile Include="900X500\FORM_ALERT.Designer.cs">
       <DependentUpon>FORM_ALERT.cs</DependentUpon>
     </Compile>
-    <Compile Include="Archivary Components\RoundedPanel.cs">
+    <Compile Include="Archivary Components\CustomComboBox.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Archivary Components\MyRectangle.cs" />
+    <Compile Include="Archivary Components\RoundedPictureBox.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="Archivary Components\RoundedPictureBox.cs">
+    <Compile Include="Archivary Components\RoundedTextBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Archivary Components\Trans.cs" />
+    <Compile Include="Archivary Components\UPDATED_RoundedPanel.cs">
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="FORM_ROOT.cs">
@@ -198,6 +206,15 @@
     <Compile Include="SUB FORMS\FORM_CIRCULATION\FORM_RETURN.Designer.cs">
       <DependentUpon>FORM_RETURN.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="1500X1000\FORM_LIBRARY\FORM_BOOKADD.resx">
+      <DependentUpon>FORM_BOOKADD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="1500X1000\FORM_LIBRARY\FORM_BOOKEDIT.resx">
+      <DependentUpon>FORM_BOOKEDIT.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="1500X1000\FORM_LIBRARY\FORM_BOOKINFO.resx">
+      <DependentUpon>FORM_BOOKINFO.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FORM_ROOT.resx">
       <DependentUpon>FORM_ROOT.cs</DependentUpon>
     </EmbeddedResource>
@@ -207,11 +224,20 @@
     <EmbeddedResource Include="MAIN FORMS\FORM_LOGIN.resx">
       <DependentUpon>FORM_LOGIN.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="MAIN FORMS\FORM_REPORTS.resx">
+      <DependentUpon>FORM_REPORTS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MAIN FORMS\FORM_SETTINGS.resx">
+      <DependentUpon>FORM_SETTINGS.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="MAIN FORMS\FORM_SIDEBAR.resx">
       <DependentUpon>FORM_SIDEBAR.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MAIN FORMS\FORM_TITLE.resx">
       <DependentUpon>FORM_TITLE.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MAIN FORMS\FORM_USERS.resx">
+      <DependentUpon>FORM_USERS.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

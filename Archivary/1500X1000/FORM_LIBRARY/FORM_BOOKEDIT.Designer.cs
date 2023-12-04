@@ -28,12 +28,598 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.LAYOUT_FILL = new System.Windows.Forms.Panel();
+            this.LAYOUT_FILL_FILL = new System.Windows.Forms.TableLayoutPanel();
+            this.titleLabel = new System.Windows.Forms.Label();
+            this.ISBNLabel = new System.Windows.Forms.Label();
+            this.publisherLabel = new System.Windows.Forms.Label();
+            this.authorLabel = new System.Windows.Forms.Label();
+            this.copyRightLabel = new System.Windows.Forms.Label();
+            this.asileLabel = new System.Windows.Forms.Label();
+            this.shelfLabel = new System.Windows.Forms.Label();
+            this.titleTextBox = new WHYWHYWHYW.RoundedTextBox();
+            this.isbnTextBox = new WHYWHYWHYW.RoundedTextBox();
+            this.publisherTextBox = new WHYWHYWHYW.RoundedTextBox();
+            this.lastNameTextbox = new WHYWHYWHYW.RoundedTextBox();
+            this.firstNameTextBox = new WHYWHYWHYW.RoundedTextBox();
+            this.middleInitialTextBox = new WHYWHYWHYW.RoundedTextBox();
+            this.copyRightTextBox = new WHYWHYWHYW.RoundedTextBox();
+            this.asileTextBox = new WHYWHYWHYW.RoundedTextBox();
+            this.shelfTextBox = new WHYWHYWHYW.RoundedTextBox();
+            this.bookPictureBox = new System.Windows.Forms.PictureBox();
+            this.LAYOUT_FILL_FILL_LEFT = new System.Windows.Forms.TableLayoutPanel();
+            this.LAYOUT_FILL_FILL_LEFT_FILL = new System.Windows.Forms.TableLayoutPanel();
+            this.uploadImageButton = new roundedCorners.roundedButton();
+            this.uploadExcelFileButton = new roundedCorners.roundedButton();
+            this.categoryComboBox = new custom.CustomComboBox();
+            this.genreComboBox = new custom.CustomComboBox();
+            this.LAYOUT_FILL_FILL_BOTTOM = new System.Windows.Forms.Panel();
+            this.LAYOUT_FILL_FILL_BOTTOM_FILL = new System.Windows.Forms.TableLayoutPanel();
+            this.saveInfoButton = new roundedCorners.roundedButton();
+            this.cancelButton = new roundedCorners.roundedButton();
+            this.LAYOUT_FILL.SuspendLayout();
+            this.LAYOUT_FILL_FILL.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.bookPictureBox)).BeginInit();
+            this.LAYOUT_FILL_FILL_LEFT.SuspendLayout();
+            this.LAYOUT_FILL_FILL_LEFT_FILL.SuspendLayout();
+            this.LAYOUT_FILL_FILL_BOTTOM.SuspendLayout();
+            this.LAYOUT_FILL_FILL_BOTTOM_FILL.SuspendLayout();
+            this.SuspendLayout();
+            // 
+            // LAYOUT_FILL
+            // 
+            this.LAYOUT_FILL.AutoScroll = true;
+            this.LAYOUT_FILL.Controls.Add(this.LAYOUT_FILL_FILL);
+            this.LAYOUT_FILL.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.LAYOUT_FILL.Location = new System.Drawing.Point(10, 10);
+            this.LAYOUT_FILL.Name = "LAYOUT_FILL";
+            this.LAYOUT_FILL.Size = new System.Drawing.Size(1462, 933);
+            this.LAYOUT_FILL.TabIndex = 0;
+            // 
+            // LAYOUT_FILL_FILL
+            // 
+            this.LAYOUT_FILL_FILL.ColumnCount = 9;
+            this.LAYOUT_FILL_FILL.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 8.310768F));
+            this.LAYOUT_FILL_FILL.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25.06744F));
+            this.LAYOUT_FILL_FILL.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 2.231615F));
+            this.LAYOUT_FILL_FILL.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 22.97286F));
+            this.LAYOUT_FILL_FILL.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 0.8108066F));
+            this.LAYOUT_FILL_FILL.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 23.58096F));
+            this.LAYOUT_FILL_FILL.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 1.14962F));
+            this.LAYOUT_FILL_FILL.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 8.453088F));
+            this.LAYOUT_FILL_FILL.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 7.422838F));
+            this.LAYOUT_FILL_FILL.Controls.Add(this.titleLabel, 3, 1);
+            this.LAYOUT_FILL_FILL.Controls.Add(this.ISBNLabel, 3, 3);
+            this.LAYOUT_FILL_FILL.Controls.Add(this.publisherLabel, 5, 3);
+            this.LAYOUT_FILL_FILL.Controls.Add(this.authorLabel, 3, 5);
+            this.LAYOUT_FILL_FILL.Controls.Add(this.copyRightLabel, 3, 7);
+            this.LAYOUT_FILL_FILL.Controls.Add(this.asileLabel, 3, 9);
+            this.LAYOUT_FILL_FILL.Controls.Add(this.shelfLabel, 3, 11);
+            this.LAYOUT_FILL_FILL.Controls.Add(this.titleTextBox, 3, 2);
+            this.LAYOUT_FILL_FILL.Controls.Add(this.isbnTextBox, 3, 4);
+            this.LAYOUT_FILL_FILL.Controls.Add(this.publisherTextBox, 5, 4);
+            this.LAYOUT_FILL_FILL.Controls.Add(this.lastNameTextbox, 3, 6);
+            this.LAYOUT_FILL_FILL.Controls.Add(this.firstNameTextBox, 5, 6);
+            this.LAYOUT_FILL_FILL.Controls.Add(this.middleInitialTextBox, 7, 6);
+            this.LAYOUT_FILL_FILL.Controls.Add(this.copyRightTextBox, 3, 8);
+            this.LAYOUT_FILL_FILL.Controls.Add(this.asileTextBox, 3, 10);
+            this.LAYOUT_FILL_FILL.Controls.Add(this.shelfTextBox, 3, 12);
+            this.LAYOUT_FILL_FILL.Controls.Add(this.bookPictureBox, 1, 1);
+            this.LAYOUT_FILL_FILL.Controls.Add(this.LAYOUT_FILL_FILL_LEFT, 1, 8);
+            this.LAYOUT_FILL_FILL.Controls.Add(this.LAYOUT_FILL_FILL_BOTTOM, 1, 13);
+            this.LAYOUT_FILL_FILL.Dock = System.Windows.Forms.DockStyle.Top;
+            this.LAYOUT_FILL_FILL.Location = new System.Drawing.Point(0, 0);
+            this.LAYOUT_FILL_FILL.Name = "LAYOUT_FILL_FILL";
+            this.LAYOUT_FILL_FILL.RowCount = 14;
+            this.LAYOUT_FILL_FILL.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 5.011504F));
+            this.LAYOUT_FILL_FILL.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 5.099952F));
+            this.LAYOUT_FILL_FILL.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 8.768338F));
+            this.LAYOUT_FILL_FILL.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 5.099952F));
+            this.LAYOUT_FILL_FILL.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 8.768338F));
+            this.LAYOUT_FILL_FILL.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 5.099952F));
+            this.LAYOUT_FILL_FILL.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 8.768338F));
+            this.LAYOUT_FILL_FILL.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 5.099952F));
+            this.LAYOUT_FILL_FILL.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 8.768338F));
+            this.LAYOUT_FILL_FILL.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 5.099952F));
+            this.LAYOUT_FILL_FILL.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 8.768338F));
+            this.LAYOUT_FILL_FILL.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 5.099952F));
+            this.LAYOUT_FILL_FILL.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 8.768886F));
+            this.LAYOUT_FILL_FILL.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 11.77821F));
+            this.LAYOUT_FILL_FILL.Size = new System.Drawing.Size(1462, 933);
+            this.LAYOUT_FILL_FILL.TabIndex = 0;
+            this.LAYOUT_FILL_FILL.Paint += new System.Windows.Forms.PaintEventHandler(this.LAYOUT_FILL_FILL_Paint);
+            // 
+            // titleLabel
+            // 
+            this.titleLabel.AutoSize = true;
+            this.titleLabel.Font = new System.Drawing.Font("Montserrat SemiBold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.titleLabel.ForeColor = System.Drawing.Color.Transparent;
+            this.titleLabel.Location = new System.Drawing.Point(522, 46);
+            this.titleLabel.Name = "titleLabel";
+            this.titleLabel.Size = new System.Drawing.Size(52, 21);
+            this.titleLabel.TabIndex = 0;
+            this.titleLabel.Text = "TITLE";
+            // 
+            // ISBNLabel
+            // 
+            this.ISBNLabel.AutoSize = true;
+            this.ISBNLabel.Font = new System.Drawing.Font("Montserrat SemiBold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ISBNLabel.ForeColor = System.Drawing.Color.White;
+            this.ISBNLabel.Location = new System.Drawing.Point(522, 174);
+            this.ISBNLabel.Name = "ISBNLabel";
+            this.ISBNLabel.Size = new System.Drawing.Size(47, 21);
+            this.ISBNLabel.TabIndex = 1;
+            this.ISBNLabel.Text = "ISBN";
+            // 
+            // publisherLabel
+            // 
+            this.publisherLabel.AutoSize = true;
+            this.publisherLabel.Font = new System.Drawing.Font("Montserrat SemiBold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.publisherLabel.ForeColor = System.Drawing.Color.White;
+            this.publisherLabel.Location = new System.Drawing.Point(868, 174);
+            this.publisherLabel.Name = "publisherLabel";
+            this.publisherLabel.Size = new System.Drawing.Size(100, 21);
+            this.publisherLabel.TabIndex = 2;
+            this.publisherLabel.Text = "PUBLISHER";
+            // 
+            // authorLabel
+            // 
+            this.authorLabel.AutoSize = true;
+            this.authorLabel.Font = new System.Drawing.Font("Montserrat SemiBold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.authorLabel.ForeColor = System.Drawing.Color.White;
+            this.authorLabel.Location = new System.Drawing.Point(522, 302);
+            this.authorLabel.Name = "authorLabel";
+            this.authorLabel.Size = new System.Drawing.Size(78, 21);
+            this.authorLabel.TabIndex = 3;
+            this.authorLabel.Text = "AUTHOR";
+            // 
+            // copyRightLabel
+            // 
+            this.copyRightLabel.AutoSize = true;
+            this.copyRightLabel.Font = new System.Drawing.Font("Montserrat SemiBold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.copyRightLabel.ForeColor = System.Drawing.Color.White;
+            this.copyRightLabel.Location = new System.Drawing.Point(522, 430);
+            this.copyRightLabel.Name = "copyRightLabel";
+            this.copyRightLabel.Size = new System.Drawing.Size(104, 21);
+            this.copyRightLabel.TabIndex = 4;
+            this.copyRightLabel.Text = "COPYRIGHT";
+            // 
+            // asileLabel
+            // 
+            this.asileLabel.AutoSize = true;
+            this.asileLabel.Font = new System.Drawing.Font("Montserrat SemiBold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.asileLabel.ForeColor = System.Drawing.Color.White;
+            this.asileLabel.Location = new System.Drawing.Point(522, 558);
+            this.asileLabel.Name = "asileLabel";
+            this.asileLabel.Size = new System.Drawing.Size(54, 21);
+            this.asileLabel.TabIndex = 5;
+            this.asileLabel.Text = "AISLE";
+            // 
+            // shelfLabel
+            // 
+            this.shelfLabel.AutoSize = true;
+            this.shelfLabel.Font = new System.Drawing.Font("Montserrat SemiBold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.shelfLabel.ForeColor = System.Drawing.Color.White;
+            this.shelfLabel.Location = new System.Drawing.Point(522, 686);
+            this.shelfLabel.Name = "shelfLabel";
+            this.shelfLabel.Size = new System.Drawing.Size(60, 21);
+            this.shelfLabel.TabIndex = 6;
+            this.shelfLabel.Text = "SHELF";
+            // 
+            // titleTextBox
+            // 
+            this.titleTextBox.BackColor = System.Drawing.Color.Transparent;
+            this.titleTextBox.Br = System.Drawing.Color.White;
+            this.LAYOUT_FILL_FILL.SetColumnSpan(this.titleTextBox, 5);
+            this.titleTextBox.Dock = System.Windows.Forms.DockStyle.Top;
+            this.titleTextBox.Font = new System.Drawing.Font("Montserrat SemiBold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.titleTextBox.ForeColor = System.Drawing.Color.Black;
+            this.titleTextBox.Location = new System.Drawing.Point(522, 96);
+            this.titleTextBox.Name = "titleTextBox";
+            this.titleTextBox.Radius = 15;
+            this.titleTextBox.Size = new System.Drawing.Size(823, 45);
+            this.titleTextBox.TabIndex = 7;
+            this.titleTextBox.Text = "THE SEVEN HUSBANDS OF EVELYN HUGO";
+            this.titleTextBox.TextAlign = WHYWHYWHYW.TextAlign.Left;
+            this.titleTextBox.UseSystemPasswordChar = false;
+            this.titleTextBox.Click += new System.EventHandler(this.titleTextBox_Click);
+            // 
+            // isbnTextBox
+            // 
+            this.isbnTextBox.BackColor = System.Drawing.Color.Transparent;
+            this.isbnTextBox.Br = System.Drawing.Color.White;
+            this.isbnTextBox.Dock = System.Windows.Forms.DockStyle.Top;
+            this.isbnTextBox.Font = new System.Drawing.Font("Montserrat SemiBold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.isbnTextBox.ForeColor = System.Drawing.Color.Black;
+            this.isbnTextBox.Location = new System.Drawing.Point(522, 224);
+            this.isbnTextBox.Name = "isbnTextBox";
+            this.isbnTextBox.Radius = 15;
+            this.isbnTextBox.Size = new System.Drawing.Size(329, 45);
+            this.isbnTextBox.TabIndex = 8;
+            this.isbnTextBox.Text = "9781501139239";
+            this.isbnTextBox.TextAlign = WHYWHYWHYW.TextAlign.Left;
+            this.isbnTextBox.UseSystemPasswordChar = false;
+            // 
+            // publisherTextBox
+            // 
+            this.publisherTextBox.BackColor = System.Drawing.Color.Transparent;
+            this.publisherTextBox.Br = System.Drawing.Color.White;
+            this.LAYOUT_FILL_FILL.SetColumnSpan(this.publisherTextBox, 3);
+            this.publisherTextBox.Dock = System.Windows.Forms.DockStyle.Top;
+            this.publisherTextBox.Font = new System.Drawing.Font("Montserrat SemiBold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.publisherTextBox.ForeColor = System.Drawing.Color.Black;
+            this.publisherTextBox.Location = new System.Drawing.Point(868, 224);
+            this.publisherTextBox.Name = "publisherTextBox";
+            this.publisherTextBox.Radius = 15;
+            this.publisherTextBox.Size = new System.Drawing.Size(477, 45);
+            this.publisherTextBox.TabIndex = 9;
+            this.publisherTextBox.Text = "Atria Books";
+            this.publisherTextBox.TextAlign = WHYWHYWHYW.TextAlign.Left;
+            this.publisherTextBox.UseSystemPasswordChar = false;
+            // 
+            // lastNameTextbox
+            // 
+            this.lastNameTextbox.BackColor = System.Drawing.Color.Transparent;
+            this.lastNameTextbox.Br = System.Drawing.Color.White;
+            this.lastNameTextbox.Dock = System.Windows.Forms.DockStyle.Top;
+            this.lastNameTextbox.Font = new System.Drawing.Font("Montserrat SemiBold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lastNameTextbox.ForeColor = System.Drawing.Color.Black;
+            this.lastNameTextbox.Location = new System.Drawing.Point(522, 352);
+            this.lastNameTextbox.Name = "lastNameTextbox";
+            this.lastNameTextbox.Radius = 15;
+            this.lastNameTextbox.Size = new System.Drawing.Size(329, 45);
+            this.lastNameTextbox.TabIndex = 10;
+            this.lastNameTextbox.Text = "JENKINS - REID";
+            this.lastNameTextbox.TextAlign = WHYWHYWHYW.TextAlign.Left;
+            this.lastNameTextbox.UseSystemPasswordChar = false;
+            // 
+            // firstNameTextBox
+            // 
+            this.firstNameTextBox.BackColor = System.Drawing.Color.Transparent;
+            this.firstNameTextBox.Br = System.Drawing.Color.White;
+            this.firstNameTextBox.Dock = System.Windows.Forms.DockStyle.Top;
+            this.firstNameTextBox.Font = new System.Drawing.Font("Montserrat SemiBold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.firstNameTextBox.ForeColor = System.Drawing.Color.Black;
+            this.firstNameTextBox.Location = new System.Drawing.Point(868, 352);
+            this.firstNameTextBox.Name = "firstNameTextBox";
+            this.firstNameTextBox.Radius = 15;
+            this.firstNameTextBox.Size = new System.Drawing.Size(338, 45);
+            this.firstNameTextBox.TabIndex = 11;
+            this.firstNameTextBox.Text = "TAYLOR ";
+            this.firstNameTextBox.TextAlign = WHYWHYWHYW.TextAlign.Left;
+            this.firstNameTextBox.UseSystemPasswordChar = false;
+            // 
+            // middleInitialTextBox
+            // 
+            this.middleInitialTextBox.BackColor = System.Drawing.Color.Transparent;
+            this.middleInitialTextBox.Br = System.Drawing.Color.White;
+            this.middleInitialTextBox.Dock = System.Windows.Forms.DockStyle.Top;
+            this.middleInitialTextBox.Font = new System.Drawing.Font("Montserrat SemiBold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.middleInitialTextBox.ForeColor = System.Drawing.Color.Black;
+            this.middleInitialTextBox.Location = new System.Drawing.Point(1228, 352);
+            this.middleInitialTextBox.Name = "middleInitialTextBox";
+            this.middleInitialTextBox.Radius = 15;
+            this.middleInitialTextBox.Size = new System.Drawing.Size(117, 45);
+            this.middleInitialTextBox.TabIndex = 12;
+            this.middleInitialTextBox.Text = "N.A.";
+            this.middleInitialTextBox.TextAlign = WHYWHYWHYW.TextAlign.Left;
+            this.middleInitialTextBox.UseSystemPasswordChar = false;
+            // 
+            // copyRightTextBox
+            // 
+            this.copyRightTextBox.BackColor = System.Drawing.Color.Transparent;
+            this.copyRightTextBox.Br = System.Drawing.Color.White;
+            this.LAYOUT_FILL_FILL.SetColumnSpan(this.copyRightTextBox, 5);
+            this.copyRightTextBox.Dock = System.Windows.Forms.DockStyle.Top;
+            this.copyRightTextBox.Font = new System.Drawing.Font("Montserrat SemiBold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.copyRightTextBox.ForeColor = System.Drawing.Color.Black;
+            this.copyRightTextBox.Location = new System.Drawing.Point(522, 480);
+            this.copyRightTextBox.Name = "copyRightTextBox";
+            this.copyRightTextBox.Radius = 15;
+            this.copyRightTextBox.Size = new System.Drawing.Size(823, 45);
+            this.copyRightTextBox.TabIndex = 13;
+            this.copyRightTextBox.Text = "© 2017 by Taylor Jenkins Reid";
+            this.copyRightTextBox.TextAlign = WHYWHYWHYW.TextAlign.Left;
+            this.copyRightTextBox.UseSystemPasswordChar = false;
+            // 
+            // asileTextBox
+            // 
+            this.asileTextBox.BackColor = System.Drawing.Color.Transparent;
+            this.asileTextBox.Br = System.Drawing.Color.White;
+            this.LAYOUT_FILL_FILL.SetColumnSpan(this.asileTextBox, 5);
+            this.asileTextBox.Dock = System.Windows.Forms.DockStyle.Top;
+            this.asileTextBox.Font = new System.Drawing.Font("Montserrat SemiBold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.asileTextBox.ForeColor = System.Drawing.Color.Black;
+            this.asileTextBox.Location = new System.Drawing.Point(522, 608);
+            this.asileTextBox.Name = "asileTextBox";
+            this.asileTextBox.Radius = 15;
+            this.asileTextBox.Size = new System.Drawing.Size(823, 45);
+            this.asileTextBox.TabIndex = 14;
+            this.asileTextBox.Text = "3A";
+            this.asileTextBox.TextAlign = WHYWHYWHYW.TextAlign.Left;
+            this.asileTextBox.UseSystemPasswordChar = false;
+            // 
+            // shelfTextBox
+            // 
+            this.shelfTextBox.BackColor = System.Drawing.Color.Transparent;
+            this.shelfTextBox.Br = System.Drawing.Color.White;
+            this.LAYOUT_FILL_FILL.SetColumnSpan(this.shelfTextBox, 5);
+            this.shelfTextBox.Dock = System.Windows.Forms.DockStyle.Top;
+            this.shelfTextBox.Font = new System.Drawing.Font("Montserrat SemiBold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.shelfTextBox.ForeColor = System.Drawing.Color.Black;
+            this.shelfTextBox.Location = new System.Drawing.Point(522, 736);
+            this.shelfTextBox.Name = "shelfTextBox";
+            this.shelfTextBox.Radius = 15;
+            this.shelfTextBox.Size = new System.Drawing.Size(823, 45);
+            this.shelfTextBox.TabIndex = 15;
+            this.shelfTextBox.Text = "B10";
+            this.shelfTextBox.TextAlign = WHYWHYWHYW.TextAlign.Left;
+            this.shelfTextBox.UseSystemPasswordChar = false;
+            // 
+            // bookPictureBox
+            // 
+            this.bookPictureBox.BackColor = System.Drawing.Color.White;
+            this.bookPictureBox.Dock = System.Windows.Forms.DockStyle.Top;
+            this.bookPictureBox.Location = new System.Drawing.Point(124, 49);
+            this.bookPictureBox.Name = "bookPictureBox";
+            this.LAYOUT_FILL_FILL.SetRowSpan(this.bookPictureBox, 7);
+            this.bookPictureBox.Size = new System.Drawing.Size(360, 425);
+            this.bookPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.bookPictureBox.TabIndex = 16;
+            this.bookPictureBox.TabStop = false;
+            this.bookPictureBox.Click += new System.EventHandler(this.bookPictureBox_Click);
+            // 
+            // LAYOUT_FILL_FILL_LEFT
+            // 
+            this.LAYOUT_FILL_FILL_LEFT.ColumnCount = 1;
+            this.LAYOUT_FILL_FILL_LEFT.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.LAYOUT_FILL_FILL_LEFT.Controls.Add(this.LAYOUT_FILL_FILL_LEFT_FILL, 0, 0);
+            this.LAYOUT_FILL_FILL_LEFT.Location = new System.Drawing.Point(124, 480);
+            this.LAYOUT_FILL_FILL_LEFT.Name = "LAYOUT_FILL_FILL_LEFT";
+            this.LAYOUT_FILL_FILL_LEFT.RowCount = 1;
+            this.LAYOUT_FILL_FILL.SetRowSpan(this.LAYOUT_FILL_FILL_LEFT, 5);
+            this.LAYOUT_FILL_FILL_LEFT.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.LAYOUT_FILL_FILL_LEFT.Size = new System.Drawing.Size(355, 323);
+            this.LAYOUT_FILL_FILL_LEFT.TabIndex = 17;
+            // 
+            // LAYOUT_FILL_FILL_LEFT_FILL
+            // 
+            this.LAYOUT_FILL_FILL_LEFT_FILL.ColumnCount = 1;
+            this.LAYOUT_FILL_FILL_LEFT_FILL.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.LAYOUT_FILL_FILL_LEFT_FILL.Controls.Add(this.uploadImageButton, 0, 0);
+            this.LAYOUT_FILL_FILL_LEFT_FILL.Controls.Add(this.uploadExcelFileButton, 0, 1);
+            this.LAYOUT_FILL_FILL_LEFT_FILL.Controls.Add(this.categoryComboBox, 0, 2);
+            this.LAYOUT_FILL_FILL_LEFT_FILL.Controls.Add(this.genreComboBox, 0, 3);
+            this.LAYOUT_FILL_FILL_LEFT_FILL.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.LAYOUT_FILL_FILL_LEFT_FILL.Location = new System.Drawing.Point(3, 3);
+            this.LAYOUT_FILL_FILL_LEFT_FILL.Name = "LAYOUT_FILL_FILL_LEFT_FILL";
+            this.LAYOUT_FILL_FILL_LEFT_FILL.RowCount = 4;
+            this.LAYOUT_FILL_FILL_LEFT_FILL.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25.86751F));
+            this.LAYOUT_FILL_FILL_LEFT_FILL.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25.86751F));
+            this.LAYOUT_FILL_FILL_LEFT_FILL.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25.86751F));
+            this.LAYOUT_FILL_FILL_LEFT_FILL.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 21.76656F));
+            this.LAYOUT_FILL_FILL_LEFT_FILL.Size = new System.Drawing.Size(349, 317);
+            this.LAYOUT_FILL_FILL_LEFT_FILL.TabIndex = 0;
+            // 
+            // uploadImageButton
+            // 
+            this.uploadImageButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(185)))), ((int)(((byte)(84)))));
+            this.uploadImageButton.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(185)))), ((int)(((byte)(84)))));
+            this.uploadImageButton.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.uploadImageButton.BorderRadius = 40;
+            this.uploadImageButton.BorderSize = 0;
+            this.uploadImageButton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.uploadImageButton.Dock = System.Windows.Forms.DockStyle.Top;
+            this.uploadImageButton.FlatAppearance.BorderSize = 0;
+            this.uploadImageButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.uploadImageButton.Font = new System.Drawing.Font("Montserrat", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.uploadImageButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(21)))), ((int)(((byte)(21)))));
+            this.uploadImageButton.Location = new System.Drawing.Point(3, 3);
+            this.uploadImageButton.Name = "uploadImageButton";
+            this.uploadImageButton.Size = new System.Drawing.Size(343, 55);
+            this.uploadImageButton.TabIndex = 0;
+            this.uploadImageButton.Text = "UPLOAD IMAGE";
+            this.uploadImageButton.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(21)))), ((int)(((byte)(21)))));
+            this.uploadImageButton.UseVisualStyleBackColor = false;
+            // 
+            // uploadExcelFileButton
+            // 
+            this.uploadExcelFileButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(185)))), ((int)(((byte)(84)))));
+            this.uploadExcelFileButton.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(185)))), ((int)(((byte)(84)))));
+            this.uploadExcelFileButton.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.uploadExcelFileButton.BorderRadius = 40;
+            this.uploadExcelFileButton.BorderSize = 0;
+            this.uploadExcelFileButton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.uploadExcelFileButton.Dock = System.Windows.Forms.DockStyle.Top;
+            this.uploadExcelFileButton.FlatAppearance.BorderSize = 0;
+            this.uploadExcelFileButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.uploadExcelFileButton.Font = new System.Drawing.Font("Montserrat", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.uploadExcelFileButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(21)))), ((int)(((byte)(21)))));
+            this.uploadExcelFileButton.Location = new System.Drawing.Point(3, 85);
+            this.uploadExcelFileButton.Name = "uploadExcelFileButton";
+            this.uploadExcelFileButton.Size = new System.Drawing.Size(343, 55);
+            this.uploadExcelFileButton.TabIndex = 1;
+            this.uploadExcelFileButton.Text = "UPLOAD EXCEL FILE";
+            this.uploadExcelFileButton.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(21)))), ((int)(((byte)(21)))));
+            this.uploadExcelFileButton.UseVisualStyleBackColor = false;
+            // 
+            // categoryComboBox
+            // 
+            this.categoryComboBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(190)))), ((int)(((byte)(143)))));
+            this.categoryComboBox.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(21)))), ((int)(((byte)(21)))));
+            this.categoryComboBox.BorderRadius = 40;
+            this.categoryComboBox.BorderSize = 1;
+            this.categoryComboBox.Dock = System.Windows.Forms.DockStyle.Top;
+            this.categoryComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDown;
+            this.categoryComboBox.Font = new System.Drawing.Font("Montserrat", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.categoryComboBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(21)))), ((int)(((byte)(21)))));
+            this.categoryComboBox.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(21)))), ((int)(((byte)(21)))));
+            this.categoryComboBox.Items.AddRange(new object[] {
+            "CATEGORY",
+            "Academic",
+            "Non-fiction",
+            "Fiction"});
+            this.categoryComboBox.ListTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(21)))), ((int)(((byte)(21)))));
+            this.categoryComboBox.Location = new System.Drawing.Point(3, 167);
+            this.categoryComboBox.MinimumSize = new System.Drawing.Size(200, 30);
+            this.categoryComboBox.Name = "categoryComboBox";
+            this.categoryComboBox.Padding = new System.Windows.Forms.Padding(1);
+            this.categoryComboBox.Size = new System.Drawing.Size(343, 55);
+            this.categoryComboBox.TabIndex = 2;
+            this.categoryComboBox.Texts = "";
+            // 
+            // genreComboBox
+            // 
+            this.genreComboBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(50)))), ((int)(((byte)(255)))));
+            this.genreComboBox.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(50)))), ((int)(((byte)(255)))));
+            this.genreComboBox.BorderRadius = 40;
+            this.genreComboBox.BorderSize = 1;
+            this.genreComboBox.Dock = System.Windows.Forms.DockStyle.Top;
+            this.genreComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDown;
+            this.genreComboBox.Font = new System.Drawing.Font("Montserrat", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.genreComboBox.ForeColor = System.Drawing.Color.White;
+            this.genreComboBox.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(21)))), ((int)(((byte)(21)))));
+            this.genreComboBox.Items.AddRange(new object[] {
+            "GENRE",
+            "Horror",
+            "Mystery",
+            "Educational",
+            "Romance"});
+            this.genreComboBox.ListTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(21)))), ((int)(((byte)(21)))));
+            this.genreComboBox.Location = new System.Drawing.Point(3, 249);
+            this.genreComboBox.MinimumSize = new System.Drawing.Size(200, 30);
+            this.genreComboBox.Name = "genreComboBox";
+            this.genreComboBox.Padding = new System.Windows.Forms.Padding(1);
+            this.genreComboBox.Size = new System.Drawing.Size(343, 55);
+            this.genreComboBox.TabIndex = 3;
+            this.genreComboBox.Texts = "";
+            // 
+            // LAYOUT_FILL_FILL_BOTTOM
+            // 
+            this.LAYOUT_FILL_FILL.SetColumnSpan(this.LAYOUT_FILL_FILL_BOTTOM, 7);
+            this.LAYOUT_FILL_FILL_BOTTOM.Controls.Add(this.LAYOUT_FILL_FILL_BOTTOM_FILL);
+            this.LAYOUT_FILL_FILL_BOTTOM.Location = new System.Drawing.Point(124, 817);
+            this.LAYOUT_FILL_FILL_BOTTOM.Name = "LAYOUT_FILL_FILL_BOTTOM";
+            this.LAYOUT_FILL_FILL_BOTTOM.Size = new System.Drawing.Size(1205, 80);
+            this.LAYOUT_FILL_FILL_BOTTOM.TabIndex = 18;
+            // 
+            // LAYOUT_FILL_FILL_BOTTOM_FILL
+            // 
+            this.LAYOUT_FILL_FILL_BOTTOM_FILL.ColumnCount = 3;
+            this.LAYOUT_FILL_FILL_BOTTOM_FILL.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 49.5298F));
+            this.LAYOUT_FILL_FILL_BOTTOM_FILL.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 0.9386114F));
+            this.LAYOUT_FILL_FILL_BOTTOM_FILL.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 49.53159F));
+            this.LAYOUT_FILL_FILL_BOTTOM_FILL.Controls.Add(this.saveInfoButton, 0, 0);
+            this.LAYOUT_FILL_FILL_BOTTOM_FILL.Controls.Add(this.cancelButton, 2, 0);
+            this.LAYOUT_FILL_FILL_BOTTOM_FILL.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.LAYOUT_FILL_FILL_BOTTOM_FILL.Location = new System.Drawing.Point(0, 0);
+            this.LAYOUT_FILL_FILL_BOTTOM_FILL.Name = "LAYOUT_FILL_FILL_BOTTOM_FILL";
+            this.LAYOUT_FILL_FILL_BOTTOM_FILL.RowCount = 1;
+            this.LAYOUT_FILL_FILL_BOTTOM_FILL.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.LAYOUT_FILL_FILL_BOTTOM_FILL.Size = new System.Drawing.Size(1205, 80);
+            this.LAYOUT_FILL_FILL_BOTTOM_FILL.TabIndex = 0;
+            // 
+            // saveInfoButton
+            // 
+            this.saveInfoButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(185)))), ((int)(((byte)(84)))));
+            this.saveInfoButton.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(185)))), ((int)(((byte)(84)))));
+            this.saveInfoButton.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.saveInfoButton.BorderRadius = 40;
+            this.saveInfoButton.BorderSize = 0;
+            this.saveInfoButton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.saveInfoButton.Dock = System.Windows.Forms.DockStyle.Top;
+            this.saveInfoButton.FlatAppearance.BorderSize = 0;
+            this.saveInfoButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.saveInfoButton.Font = new System.Drawing.Font("Montserrat", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.saveInfoButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(21)))), ((int)(((byte)(21)))));
+            this.saveInfoButton.Location = new System.Drawing.Point(3, 3);
+            this.saveInfoButton.Name = "saveInfoButton";
+            this.saveInfoButton.Size = new System.Drawing.Size(590, 55);
+            this.saveInfoButton.TabIndex = 0;
+            this.saveInfoButton.Text = "SAVE INFORMATION";
+            this.saveInfoButton.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(21)))), ((int)(((byte)(21)))));
+            this.saveInfoButton.UseVisualStyleBackColor = false;
+            // 
+            // cancelButton
+            // 
+            this.cancelButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(21)))), ((int)(((byte)(21)))));
+            this.cancelButton.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(21)))), ((int)(((byte)(21)))));
+            this.cancelButton.BorderColor = System.Drawing.Color.White;
+            this.cancelButton.BorderRadius = 40;
+            this.cancelButton.BorderSize = 2;
+            this.cancelButton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.cancelButton.Dock = System.Windows.Forms.DockStyle.Top;
+            this.cancelButton.FlatAppearance.BorderSize = 0;
+            this.cancelButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.cancelButton.Font = new System.Drawing.Font("Montserrat", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cancelButton.ForeColor = System.Drawing.Color.White;
+            this.cancelButton.Location = new System.Drawing.Point(610, 3);
+            this.cancelButton.Name = "cancelButton";
+            this.cancelButton.Size = new System.Drawing.Size(592, 55);
+            this.cancelButton.TabIndex = 1;
+            this.cancelButton.Text = "CANCEL\r\n";
+            this.cancelButton.TextColor = System.Drawing.Color.White;
+            this.cancelButton.UseVisualStyleBackColor = false;
+            this.cancelButton.Click += new System.EventHandler(this.cancelButton_Click);
+            // 
+            // FORM_BOOKEDIT
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(21)))), ((int)(((byte)(21)))));
+            this.ClientSize = new System.Drawing.Size(1482, 953);
+            this.Controls.Add(this.LAYOUT_FILL);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.MaximumSize = new System.Drawing.Size(1500, 1000);
+            this.MinimumSize = new System.Drawing.Size(960, 540);
+            this.Name = "FORM_BOOKEDIT";
+            this.Padding = new System.Windows.Forms.Padding(10);
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FORM_BOOKEDIT";
+            this.Load += new System.EventHandler(this.FORM_BOOKEDIT_Load);
+            this.Paint += new System.Windows.Forms.PaintEventHandler(this.FORM_BOOKEDIT_Paint);
+            this.LAYOUT_FILL.ResumeLayout(false);
+            this.LAYOUT_FILL_FILL.ResumeLayout(false);
+            this.LAYOUT_FILL_FILL.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.bookPictureBox)).EndInit();
+            this.LAYOUT_FILL_FILL_LEFT.ResumeLayout(false);
+            this.LAYOUT_FILL_FILL_LEFT_FILL.ResumeLayout(false);
+            this.LAYOUT_FILL_FILL_BOTTOM.ResumeLayout(false);
+            this.LAYOUT_FILL_FILL_BOTTOM_FILL.ResumeLayout(false);
+            this.ResumeLayout(false);
+
         }
 
         #endregion
+
+        private System.Windows.Forms.Panel LAYOUT_FILL;
+        private System.Windows.Forms.TableLayoutPanel LAYOUT_FILL_FILL;
+        private System.Windows.Forms.Label titleLabel;
+        private System.Windows.Forms.Label ISBNLabel;
+        private System.Windows.Forms.Label publisherLabel;
+        private System.Windows.Forms.Label authorLabel;
+        private System.Windows.Forms.Label copyRightLabel;
+        private System.Windows.Forms.Label asileLabel;
+        private System.Windows.Forms.Label shelfLabel;
+        private WHYWHYWHYW.RoundedTextBox titleTextBox;
+        private WHYWHYWHYW.RoundedTextBox isbnTextBox;
+        private WHYWHYWHYW.RoundedTextBox publisherTextBox;
+        private WHYWHYWHYW.RoundedTextBox lastNameTextbox;
+        private WHYWHYWHYW.RoundedTextBox firstNameTextBox;
+        private WHYWHYWHYW.RoundedTextBox middleInitialTextBox;
+        private WHYWHYWHYW.RoundedTextBox copyRightTextBox;
+        private WHYWHYWHYW.RoundedTextBox asileTextBox;
+        private WHYWHYWHYW.RoundedTextBox shelfTextBox;
+        private System.Windows.Forms.PictureBox bookPictureBox;
+        private System.Windows.Forms.TableLayoutPanel LAYOUT_FILL_FILL_LEFT;
+        private System.Windows.Forms.TableLayoutPanel LAYOUT_FILL_FILL_LEFT_FILL;
+        private roundedCorners.roundedButton uploadImageButton;
+        private roundedCorners.roundedButton uploadExcelFileButton;
+        private custom.CustomComboBox categoryComboBox;
+        private custom.CustomComboBox genreComboBox;
+        private System.Windows.Forms.Panel LAYOUT_FILL_FILL_BOTTOM;
+        private System.Windows.Forms.TableLayoutPanel LAYOUT_FILL_FILL_BOTTOM_FILL;
+        private roundedCorners.roundedButton saveInfoButton;
+        private roundedCorners.roundedButton cancelButton;
     }
 }

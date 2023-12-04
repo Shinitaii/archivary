@@ -38,11 +38,11 @@
             this.LAYOUT_CENTER_CENTER_TOP = new System.Windows.Forms.Panel();
             this.LAYOUT_CENTER_CENTER_BOTTOM = new System.Windows.Forms.Panel();
             this.LAYOUT_CENTER_CENTER_BOTTOM_CENTER = new System.Windows.Forms.Panel();
+            this.goLoginButton = new roundedCorners.roundedButton();
             this.LAYOUT_CENTER_CENTER_BOTTOM_RIGHT = new System.Windows.Forms.Panel();
             this.LAYOUT_CENTER_CENTER_BOTTOM_LEFT = new System.Windows.Forms.Panel();
             this.LAYOUT_CENTER_RIGHT = new System.Windows.Forms.Panel();
             this.LAYOUT_CENTER_LEFT = new System.Windows.Forms.Panel();
-            this.goLoginButton = new roundedCorners.roundedButton();
             this.LAYOUT_CENTER.SuspendLayout();
             this.LAYOUT_CENTER_CENTER.SuspendLayout();
             this.LAYOUT_CENTER_CENTER_CENTER.SuspendLayout();
@@ -142,6 +142,27 @@
             this.LAYOUT_CENTER_CENTER_BOTTOM_CENTER.Size = new System.Drawing.Size(702, 100);
             this.LAYOUT_CENTER_CENTER_BOTTOM_CENTER.TabIndex = 2;
             // 
+            // goLoginButton
+            // 
+            this.goLoginButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(185)))), ((int)(((byte)(84)))));
+            this.goLoginButton.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(185)))), ((int)(((byte)(84)))));
+            this.goLoginButton.BorderColor = System.Drawing.Color.Empty;
+            this.goLoginButton.BorderRadius = 30;
+            this.goLoginButton.BorderSize = 0;
+            this.goLoginButton.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.goLoginButton.FlatAppearance.BorderSize = 0;
+            this.goLoginButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.goLoginButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.goLoginButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(21)))), ((int)(((byte)(21)))));
+            this.goLoginButton.Location = new System.Drawing.Point(0, 0);
+            this.goLoginButton.Name = "goLoginButton";
+            this.goLoginButton.Size = new System.Drawing.Size(702, 100);
+            this.goLoginButton.TabIndex = 0;
+            this.goLoginButton.Text = "Start";
+            this.goLoginButton.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(21)))), ((int)(((byte)(21)))));
+            this.goLoginButton.UseVisualStyleBackColor = false;
+            this.goLoginButton.Click += new System.EventHandler(this.goLoginButton_Click);
+            // 
             // LAYOUT_CENTER_CENTER_BOTTOM_RIGHT
             // 
             this.LAYOUT_CENTER_CENTER_BOTTOM_RIGHT.Dock = System.Windows.Forms.DockStyle.Right;
@@ -174,27 +195,6 @@
             this.LAYOUT_CENTER_LEFT.Name = "LAYOUT_CENTER_LEFT";
             this.LAYOUT_CENTER_LEFT.Size = new System.Drawing.Size(200, 698);
             this.LAYOUT_CENTER_LEFT.TabIndex = 0;
-            // 
-            // goLoginButton
-            // 
-            this.goLoginButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(185)))), ((int)(((byte)(84)))));
-            this.goLoginButton.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(185)))), ((int)(((byte)(84)))));
-            this.goLoginButton.BorderColor = System.Drawing.Color.Empty;
-            this.goLoginButton.BorderRadius = 30;
-            this.goLoginButton.BorderSize = 0;
-            this.goLoginButton.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.goLoginButton.FlatAppearance.BorderSize = 0;
-            this.goLoginButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.goLoginButton.Font = new System.Drawing.Font("Montserrat ExtraBold", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.goLoginButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(21)))), ((int)(((byte)(21)))));
-            this.goLoginButton.Location = new System.Drawing.Point(0, 0);
-            this.goLoginButton.Name = "goLoginButton";
-            this.goLoginButton.Size = new System.Drawing.Size(702, 100);
-            this.goLoginButton.TabIndex = 0;
-            this.goLoginButton.Text = "Start";
-            this.goLoginButton.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(21)))), ((int)(((byte)(21)))));
-            this.goLoginButton.UseVisualStyleBackColor = false;
-            this.goLoginButton.Click += new System.EventHandler(this.goLoginButton_Click);
             // 
             // FORM_TITLE
             // 
