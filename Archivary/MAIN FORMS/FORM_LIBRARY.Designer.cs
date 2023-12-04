@@ -1362,11 +1362,13 @@
             this.roundedButton9.Text = "VIEW BOOK";
             this.roundedButton9.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(21)))), ((int)(((byte)(21)))));
             this.roundedButton9.UseVisualStyleBackColor = false;
+
             // 
             // FORM_LIBRARY
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(21)))), ((int)(((byte)(21)))));
             this.ClientSize = new System.Drawing.Size(1916, 1055);
             this.Controls.Add(this.booksContainerFlowPanel);
@@ -1432,12 +1434,14 @@
             this.tableLayoutPanel9.PerformLayout();
             this.panel18.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
+
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
+          
         private System.Windows.Forms.Panel LAYOUT_TOP;
         private System.Windows.Forms.Panel LAYOUT_TOP_RIGHT;
         private custom.CustomComboBox filterComboBox;
@@ -1527,5 +1531,6 @@
         private System.Windows.Forms.Panel panel18;
         private System.Windows.Forms.PictureBox pictureBox9;
         private roundedCorners.roundedButton roundedButton9;
+
     }
 }

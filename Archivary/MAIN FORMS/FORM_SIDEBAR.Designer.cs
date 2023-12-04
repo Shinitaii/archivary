@@ -28,7 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FORM_SIDEBAR));
             this.PANEL_SIDEBAR = new System.Windows.Forms.Panel();
+
             this.sidebarButton7 = new sidebarComponents.sidebarButton();
             this.panel3 = new System.Windows.Forms.Panel();
             this.sidebarButton5 = new sidebarComponents.sidebarButton();
@@ -38,42 +40,64 @@
             this.sidebarButton1 = new sidebarComponents.sidebarButton();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
+
             this.LAYOUT3 = new System.Windows.Forms.Panel();
+            this.nameLabel = new System.Windows.Forms.Label();
+            this.accountPictureBox = new custom.RoundedPictureBox();
             this.LAYOUT2 = new System.Windows.Forms.Panel();
+            this.LAYOUT_logo = new System.Windows.Forms.Panel();
             this.logoPictureBox = new System.Windows.Forms.PictureBox();
             this.LAYOUT1 = new System.Windows.Forms.Panel();
-            this.button1 = new System.Windows.Forms.Button();
+            this.PANEL_sidebarButton = new System.Windows.Forms.Panel();
+            this.dashboardLabel = new System.Windows.Forms.Label();
+            this.sidebarButton = new sidebarComponents.sidebarButton();
+            this.LAYOUT_SIDEBAR = new System.Windows.Forms.Panel();
             this.PANEL_CONTAINER = new System.Windows.Forms.Panel();
+
             this.roundedButton2 = new roundedCorners.roundedButton();
             this.roundedButton1 = new roundedCorners.roundedButton();
             this.settings_TemporaryButton = new roundedCorners.roundedButton();
             this.libraryTemporary_Button = new roundedCorners.roundedButton();
             this.button2 = new System.Windows.Forms.Button();
             this.bookAdd_TemporaryButton = new roundedCorners.roundedButton();
+
             this.PANEL_SIDEBAR.SuspendLayout();
-            this.LAYOUT2.SuspendLayout();
+            this.LAYOUT_account.SuspendLayout();
+            this.LAYOUT_viewButton.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.accountPictureBox)).BeginInit();
+            this.LAYOUT_logo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.logoPictureBox)).BeginInit();
+            this.PANEL_sidebarButton.SuspendLayout();
             this.PANEL_CONTAINER.SuspendLayout();
+            this.PANEL_HEADER.SuspendLayout();
             this.SuspendLayout();
             // 
             // PANEL_SIDEBAR
             // 
-            this.PANEL_SIDEBAR.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(185)))), ((int)(((byte)(84)))));
-            this.PANEL_SIDEBAR.Controls.Add(this.sidebarButton7);
-            this.PANEL_SIDEBAR.Controls.Add(this.panel3);
-            this.PANEL_SIDEBAR.Controls.Add(this.sidebarButton5);
-            this.PANEL_SIDEBAR.Controls.Add(this.sidebarButton4);
-            this.PANEL_SIDEBAR.Controls.Add(this.sidebarButton3);
-            this.PANEL_SIDEBAR.Controls.Add(this.sidebarButton2);
-            this.PANEL_SIDEBAR.Controls.Add(this.sidebarButton1);
-            this.PANEL_SIDEBAR.Controls.Add(this.panel2);
-            this.PANEL_SIDEBAR.Controls.Add(this.panel1);
-            this.PANEL_SIDEBAR.Controls.Add(this.LAYOUT3);
+            this.PANEL_SIDEBAR.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(18)))), ((int)(((byte)(18)))));
+            this.PANEL_SIDEBAR.Controls.Add(this.LAYOUT_LINE3);
+            this.PANEL_SIDEBAR.Controls.Add(this.LAYOUT8);
+            this.PANEL_SIDEBAR.Controls.Add(this.LAYOUT_LINE2);
+            this.PANEL_SIDEBAR.Controls.Add(this.LAYOUT7);
+            this.PANEL_SIDEBAR.Controls.Add(this.logoutButton);
+            this.PANEL_SIDEBAR.Controls.Add(this.LAYOUT90);
+            this.PANEL_SIDEBAR.Controls.Add(this.settingsButton);
+            this.PANEL_SIDEBAR.Controls.Add(this.reportsButton);
+            this.PANEL_SIDEBAR.Controls.Add(this.usersButton);
+            this.PANEL_SIDEBAR.Controls.Add(this.circulationButton);
+            this.PANEL_SIDEBAR.Controls.Add(this.libraryButton);
+            this.PANEL_SIDEBAR.Controls.Add(this.LAYOUT6);
+            this.PANEL_SIDEBAR.Controls.Add(this.LAYOUT_LINE1);
+            this.PANEL_SIDEBAR.Controls.Add(this.LAYOUT5);
+            this.PANEL_SIDEBAR.Controls.Add(this.LAYOUT_account);
             this.PANEL_SIDEBAR.Controls.Add(this.LAYOUT2);
+            this.PANEL_SIDEBAR.Controls.Add(this.LAYOUT_logo);
             this.PANEL_SIDEBAR.Controls.Add(this.LAYOUT1);
+            this.PANEL_SIDEBAR.Controls.Add(this.PANEL_sidebarButton);
             this.PANEL_SIDEBAR.Dock = System.Windows.Forms.DockStyle.Left;
             this.PANEL_SIDEBAR.Location = new System.Drawing.Point(0, 0);
             this.PANEL_SIDEBAR.Name = "PANEL_SIDEBAR";
+
             this.PANEL_SIDEBAR.Size = new System.Drawing.Size(320, 1080);
             this.PANEL_SIDEBAR.TabIndex = 1;
             // 
@@ -222,6 +246,7 @@
             this.sidebarButton1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.sidebarButton1.TextColor = System.Drawing.SystemColors.Window;
             this.sidebarButton1.UseVisualStyleBackColor = false;
+
             // 
             // panel2
             // 
@@ -414,27 +439,42 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(21)))), ((int)(((byte)(21)))));
             this.ClientSize = new System.Drawing.Size(1920, 1080);
             this.Controls.Add(this.PANEL_CONTAINER);
+            this.Controls.Add(this.PANEL_HEADER);
+            this.Controls.Add(this.LAYOUT_SIDEBAR);
             this.Controls.Add(this.PANEL_SIDEBAR);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FORM_SIDEBAR";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.FORM_SIDEBAR_Load);
             this.PANEL_SIDEBAR.ResumeLayout(false);
-            this.LAYOUT2.ResumeLayout(false);
+            this.LAYOUT_account.ResumeLayout(false);
+            this.LAYOUT_viewButton.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.accountPictureBox)).EndInit();
+            this.LAYOUT_logo.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.logoPictureBox)).EndInit();
+            this.PANEL_sidebarButton.ResumeLayout(false);
             this.PANEL_CONTAINER.ResumeLayout(false);
+            this.PANEL_HEADER.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
 
         #endregion
         private System.Windows.Forms.Panel PANEL_SIDEBAR;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Panel PANEL_CONTAINER;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Panel LAYOUT2;
-        private System.Windows.Forms.PictureBox logoPictureBox;
+        private System.Windows.Forms.Panel LAYOUT_SIDEBAR;
+        private System.Windows.Forms.Panel PANEL_sidebarButton;
+        private System.Windows.Forms.Label dashboardLabel;
+        private sidebarComponents.sidebarButton sidebarButton;
+        private System.Windows.Forms.Panel LAYOUT_logo;
         private System.Windows.Forms.Panel LAYOUT1;
+        private System.Windows.Forms.PictureBox logoPictureBox;
+        private System.Windows.Forms.Panel LAYOUT_account;
+        private System.Windows.Forms.Panel LAYOUT2;
+        private custom.RoundedPictureBox accountPictureBox;
+        private System.Windows.Forms.Label nameLabel;
+        private System.Windows.Forms.Panel LAYOUT_viewButton;
+        private roundedCorners.roundedButton viewButton;
+        private System.Windows.Forms.Panel LAYOUT4;
         private System.Windows.Forms.Panel LAYOUT3;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel panel1;
@@ -450,5 +490,6 @@
         private roundedCorners.roundedButton roundedButton1;
         private roundedCorners.roundedButton roundedButton2;
         private roundedCorners.roundedButton bookAdd_TemporaryButton;
+
     }
 }
