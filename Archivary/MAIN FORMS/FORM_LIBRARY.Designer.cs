@@ -210,7 +210,7 @@
             this.searchBookTextBox.Radius = 12;
             this.searchBookTextBox.Size = new System.Drawing.Size(1372, 40);
             this.searchBookTextBox.TabIndex = 0;
-            this.searchBookTextBox.Text = "Search Book";
+            this.searchBookTextBox.Text = " ";
             this.searchBookTextBox.TextAlign = WHYWHYWHYW.TextAlign.Left;
             this.searchBookTextBox.UseSystemPasswordChar = false;
             this.searchBookTextBox.Click += new System.EventHandler(this.searchBookTextBox_Click);
