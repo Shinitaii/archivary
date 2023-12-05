@@ -51,8 +51,6 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.roundedButton1 = new roundedCorners.roundedButton();
             this.panel3 = new System.Windows.Forms.Panel();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.label4 = new System.Windows.Forms.Label();
@@ -61,6 +59,7 @@
             this.panel4 = new System.Windows.Forms.Panel();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.roundedButton2 = new roundedCorners.roundedButton();
+            this.roundedButton1 = new roundedCorners.roundedButton();
             this.panel5 = new System.Windows.Forms.Panel();
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
             this.label7 = new System.Windows.Forms.Label();
@@ -117,6 +116,7 @@
             this.panel18 = new System.Windows.Forms.Panel();
             this.pictureBox9 = new System.Windows.Forms.PictureBox();
             this.roundedButton9 = new roundedCorners.roundedButton();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.LAYOUT_TOP.SuspendLayout();
             this.searchBarContainerPanel.SuspendLayout();
             this.LAYOUT_TOP_RIGHT.SuspendLayout();
@@ -127,8 +127,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.bookPictureBox)).BeginInit();
             this.panel1.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
-            this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel3.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
             this.panel4.SuspendLayout();
@@ -161,6 +159,7 @@
             this.tableLayoutPanel9.SuspendLayout();
             this.panel18.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // LAYOUT_TOP
@@ -170,8 +169,9 @@
             this.LAYOUT_TOP.Controls.Add(this.LAYOUT_TOP_RIGHT);
             this.LAYOUT_TOP.Dock = System.Windows.Forms.DockStyle.Top;
             this.LAYOUT_TOP.Location = new System.Drawing.Point(0, 0);
+            this.LAYOUT_TOP.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.LAYOUT_TOP.Name = "LAYOUT_TOP";
-            this.LAYOUT_TOP.Size = new System.Drawing.Size(1916, 127);
+            this.LAYOUT_TOP.Size = new System.Drawing.Size(720, 103);
             this.LAYOUT_TOP.TabIndex = 0;
             this.LAYOUT_TOP.Paint += new System.Windows.Forms.PaintEventHandler(this.LAYOUT_TOP_Paint);
             // 
@@ -179,9 +179,10 @@
             // 
             this.bookCotainer_FlowLayoutPanel.AutoScroll = true;
             this.bookCotainer_FlowLayoutPanel.BackColor = System.Drawing.Color.White;
-            this.bookCotainer_FlowLayoutPanel.Location = new System.Drawing.Point(47, 131);
+            this.bookCotainer_FlowLayoutPanel.Location = new System.Drawing.Point(35, 106);
+            this.bookCotainer_FlowLayoutPanel.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.bookCotainer_FlowLayoutPanel.Name = "bookCotainer_FlowLayoutPanel";
-            this.bookCotainer_FlowLayoutPanel.Size = new System.Drawing.Size(1667, 974);
+            this.bookCotainer_FlowLayoutPanel.Size = new System.Drawing.Size(1250, 791);
             this.bookCotainer_FlowLayoutPanel.TabIndex = 1;
             this.bookCotainer_FlowLayoutPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.bookCotainer_FlowLayoutPanel_Paint);
             // 
@@ -192,10 +193,11 @@
             this.searchBarContainerPanel.BorderColor = System.Drawing.SystemColors.Control;
             this.searchBarContainerPanel.BorderWidth = 1F;
             this.searchBarContainerPanel.Controls.Add(this.searchBookTextBox);
-            this.searchBarContainerPanel.Location = new System.Drawing.Point(44, 44);
+            this.searchBarContainerPanel.Location = new System.Drawing.Point(33, 36);
+            this.searchBarContainerPanel.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.searchBarContainerPanel.Name = "searchBarContainerPanel";
             this.searchBarContainerPanel.Radius = 15;
-            this.searchBarContainerPanel.Size = new System.Drawing.Size(1377, 46);
+            this.searchBarContainerPanel.Size = new System.Drawing.Size(316, 37);
             this.searchBarContainerPanel.TabIndex = 2;
             // 
             // searchBookTextBox
@@ -203,12 +205,13 @@
             this.searchBookTextBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.searchBookTextBox.BackColor = System.Drawing.Color.Transparent;
             this.searchBookTextBox.Br = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(21)))), ((int)(((byte)(21)))));
-            this.searchBookTextBox.Font = new System.Drawing.Font("Montserrat", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.searchBookTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.searchBookTextBox.ForeColor = System.Drawing.Color.Transparent;
-            this.searchBookTextBox.Location = new System.Drawing.Point(2, 3);
+            this.searchBookTextBox.Location = new System.Drawing.Point(2, 2);
+            this.searchBookTextBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.searchBookTextBox.Name = "searchBookTextBox";
             this.searchBookTextBox.Radius = 12;
-            this.searchBookTextBox.Size = new System.Drawing.Size(1372, 40);
+            this.searchBookTextBox.Size = new System.Drawing.Size(312, 32);
             this.searchBookTextBox.TabIndex = 0;
             this.searchBookTextBox.Text = " ";
             this.searchBookTextBox.TextAlign = WHYWHYWHYW.TextAlign.Left;
@@ -222,9 +225,10 @@
             this.LAYOUT_TOP_RIGHT.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.LAYOUT_TOP_RIGHT.Controls.Add(this.addBookButton);
             this.LAYOUT_TOP_RIGHT.Controls.Add(this.filterComboBox);
-            this.LAYOUT_TOP_RIGHT.Location = new System.Drawing.Point(1427, 3);
+            this.LAYOUT_TOP_RIGHT.Location = new System.Drawing.Point(353, 2);
+            this.LAYOUT_TOP_RIGHT.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.LAYOUT_TOP_RIGHT.Name = "LAYOUT_TOP_RIGHT";
-            this.LAYOUT_TOP_RIGHT.Size = new System.Drawing.Size(486, 121);
+            this.LAYOUT_TOP_RIGHT.Size = new System.Drawing.Size(364, 98);
             this.LAYOUT_TOP_RIGHT.TabIndex = 1;
             // 
             // addBookButton
@@ -239,11 +243,12 @@
             this.addBookButton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.addBookButton.FlatAppearance.BorderSize = 0;
             this.addBookButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.addBookButton.Font = new System.Drawing.Font("Montserrat ExtraBold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.addBookButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.addBookButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(21)))), ((int)(((byte)(21)))));
-            this.addBookButton.Location = new System.Drawing.Point(242, 44);
+            this.addBookButton.Location = new System.Drawing.Point(182, 36);
+            this.addBookButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.addBookButton.Name = "addBookButton";
-            this.addBookButton.Size = new System.Drawing.Size(206, 45);
+            this.addBookButton.Size = new System.Drawing.Size(154, 37);
             this.addBookButton.TabIndex = 2;
             this.addBookButton.Text = "ADD";
             this.addBookButton.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(21)))), ((int)(((byte)(21)))));
@@ -258,7 +263,7 @@
             this.filterComboBox.BorderRadius = 40;
             this.filterComboBox.BorderSize = 1;
             this.filterComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDown;
-            this.filterComboBox.Font = new System.Drawing.Font("Montserrat", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.filterComboBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.filterComboBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(21)))), ((int)(((byte)(21)))));
             this.filterComboBox.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(21)))), ((int)(((byte)(21)))));
             this.filterComboBox.Items.AddRange(new object[] {
@@ -269,11 +274,12 @@
             "Genre",
             "ISBN"});
             this.filterComboBox.ListTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(21)))), ((int)(((byte)(21)))));
-            this.filterComboBox.Location = new System.Drawing.Point(2, 44);
-            this.filterComboBox.MinimumSize = new System.Drawing.Size(200, 30);
+            this.filterComboBox.Location = new System.Drawing.Point(2, 36);
+            this.filterComboBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.filterComboBox.MinimumSize = new System.Drawing.Size(150, 24);
             this.filterComboBox.Name = "filterComboBox";
             this.filterComboBox.Padding = new System.Windows.Forms.Padding(1);
-            this.filterComboBox.Size = new System.Drawing.Size(234, 45);
+            this.filterComboBox.Size = new System.Drawing.Size(176, 37);
             this.filterComboBox.TabIndex = 3;
             this.filterComboBox.Texts = "";
             // 
@@ -307,9 +313,10 @@
             this.booksContainerFlowPanel.Controls.Add(this.panel15);
             this.booksContainerFlowPanel.Controls.Add(this.panel17);
             this.booksContainerFlowPanel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.booksContainerFlowPanel.Location = new System.Drawing.Point(0, 127);
+            this.booksContainerFlowPanel.Location = new System.Drawing.Point(0, 103);
+            this.booksContainerFlowPanel.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.booksContainerFlowPanel.Name = "booksContainerFlowPanel";
-            this.booksContainerFlowPanel.Size = new System.Drawing.Size(1916, 928);
+            this.booksContainerFlowPanel.Size = new System.Drawing.Size(720, 336);
             this.booksContainerFlowPanel.TabIndex = 1;
             // 
             // bookContainer
@@ -319,9 +326,10 @@
             this.bookContainer.Controls.Add(this.LAYOUT_FILL_FILL_TOP);
             this.bookContainer.Controls.Add(this.LAYOUT_FILL_FILL_LEFT);
             this.bookContainer.Controls.Add(this.viewBookButton);
-            this.bookContainer.Location = new System.Drawing.Point(3, 3);
+            this.bookContainer.Location = new System.Drawing.Point(2, 2);
+            this.bookContainer.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.bookContainer.Name = "bookContainer";
-            this.bookContainer.Size = new System.Drawing.Size(937, 227);
+            this.bookContainer.Size = new System.Drawing.Size(703, 184);
             this.bookContainer.TabIndex = 12;
             // 
             // LAYOUT_FILL_FILL_TOP
@@ -332,24 +340,26 @@
             this.LAYOUT_FILL_FILL_TOP.Controls.Add(this.ISBNLabel, 0, 3);
             this.LAYOUT_FILL_FILL_TOP.Controls.Add(this.bookTitleLabel, 0, 1);
             this.LAYOUT_FILL_FILL_TOP.Dock = System.Windows.Forms.DockStyle.Top;
-            this.LAYOUT_FILL_FILL_TOP.Location = new System.Drawing.Point(247, 0);
+            this.LAYOUT_FILL_FILL_TOP.Location = new System.Drawing.Point(185, 0);
+            this.LAYOUT_FILL_FILL_TOP.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.LAYOUT_FILL_FILL_TOP.Name = "LAYOUT_FILL_FILL_TOP";
             this.LAYOUT_FILL_FILL_TOP.RowCount = 4;
             this.LAYOUT_FILL_FILL_TOP.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 29.62963F));
             this.LAYOUT_FILL_FILL_TOP.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 70.37037F));
-            this.LAYOUT_FILL_FILL_TOP.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 31F));
-            this.LAYOUT_FILL_FILL_TOP.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 29F));
-            this.LAYOUT_FILL_FILL_TOP.Size = new System.Drawing.Size(690, 142);
+            this.LAYOUT_FILL_FILL_TOP.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25F));
+            this.LAYOUT_FILL_FILL_TOP.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 24F));
+            this.LAYOUT_FILL_FILL_TOP.Size = new System.Drawing.Size(518, 115);
             this.LAYOUT_FILL_FILL_TOP.TabIndex = 9;
             // 
             // bookAuthorLabel
             // 
             this.bookAuthorLabel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.bookAuthorLabel.AutoSize = true;
-            this.bookAuthorLabel.Font = new System.Drawing.Font("Montserrat", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bookAuthorLabel.Location = new System.Drawing.Point(3, 86);
+            this.bookAuthorLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bookAuthorLabel.Location = new System.Drawing.Point(2, 70);
+            this.bookAuthorLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.bookAuthorLabel.Name = "bookAuthorLabel";
-            this.bookAuthorLabel.Size = new System.Drawing.Size(684, 21);
+            this.bookAuthorLabel.Size = new System.Drawing.Size(514, 15);
             this.bookAuthorLabel.TabIndex = 4;
             this.bookAuthorLabel.Text = "Author: Reid, Taylor Jenkins";
             // 
@@ -357,10 +367,11 @@
             // 
             this.ISBNLabel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.ISBNLabel.AutoSize = true;
-            this.ISBNLabel.Font = new System.Drawing.Font("Montserrat", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ISBNLabel.Location = new System.Drawing.Point(3, 116);
+            this.ISBNLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ISBNLabel.Location = new System.Drawing.Point(2, 95);
+            this.ISBNLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.ISBNLabel.Name = "ISBNLabel";
-            this.ISBNLabel.Size = new System.Drawing.Size(684, 21);
+            this.ISBNLabel.Size = new System.Drawing.Size(514, 15);
             this.ISBNLabel.TabIndex = 5;
             this.ISBNLabel.Text = "ISBN: 9781501139239";
             // 
@@ -368,11 +379,12 @@
             // 
             this.bookTitleLabel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.bookTitleLabel.AutoSize = true;
-            this.bookTitleLabel.Font = new System.Drawing.Font("Montserrat ExtraBold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bookTitleLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bookTitleLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(185)))), ((int)(((byte)(84)))));
-            this.bookTitleLabel.Location = new System.Drawing.Point(3, 39);
+            this.bookTitleLabel.Location = new System.Drawing.Point(2, 32);
+            this.bookTitleLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.bookTitleLabel.Name = "bookTitleLabel";
-            this.bookTitleLabel.Size = new System.Drawing.Size(684, 27);
+            this.bookTitleLabel.Size = new System.Drawing.Size(514, 20);
             this.bookTitleLabel.TabIndex = 3;
             this.bookTitleLabel.Text = "THE SEVEN HUSBANDS OF EVELYN HUGO";
             // 
@@ -381,17 +393,19 @@
             this.LAYOUT_FILL_FILL_LEFT.Controls.Add(this.bookPictureBox);
             this.LAYOUT_FILL_FILL_LEFT.Dock = System.Windows.Forms.DockStyle.Left;
             this.LAYOUT_FILL_FILL_LEFT.Location = new System.Drawing.Point(0, 0);
+            this.LAYOUT_FILL_FILL_LEFT.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.LAYOUT_FILL_FILL_LEFT.Name = "LAYOUT_FILL_FILL_LEFT";
-            this.LAYOUT_FILL_FILL_LEFT.Size = new System.Drawing.Size(247, 227);
+            this.LAYOUT_FILL_FILL_LEFT.Size = new System.Drawing.Size(185, 184);
             this.LAYOUT_FILL_FILL_LEFT.TabIndex = 7;
             // 
             // bookPictureBox
             // 
             this.bookPictureBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.bookPictureBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(190)))), ((int)(((byte)(143)))));
-            this.bookPictureBox.Location = new System.Drawing.Point(54, 17);
+            this.bookPictureBox.Location = new System.Drawing.Point(40, 14);
+            this.bookPictureBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.bookPictureBox.Name = "bookPictureBox";
-            this.bookPictureBox.Size = new System.Drawing.Size(168, 189);
+            this.bookPictureBox.Size = new System.Drawing.Size(126, 154);
             this.bookPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.bookPictureBox.TabIndex = 2;
             this.bookPictureBox.TabStop = false;
@@ -407,11 +421,12 @@
             this.viewBookButton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.viewBookButton.FlatAppearance.BorderSize = 0;
             this.viewBookButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.viewBookButton.Font = new System.Drawing.Font("Montserrat", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.viewBookButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.viewBookButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(21)))), ((int)(((byte)(21)))));
-            this.viewBookButton.Location = new System.Drawing.Point(253, 153);
+            this.viewBookButton.Location = new System.Drawing.Point(190, 124);
+            this.viewBookButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.viewBookButton.Name = "viewBookButton";
-            this.viewBookButton.Size = new System.Drawing.Size(668, 45);
+            this.viewBookButton.Size = new System.Drawing.Size(501, 37);
             this.viewBookButton.TabIndex = 6;
             this.viewBookButton.Text = "VIEW BOOK";
             this.viewBookButton.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(21)))), ((int)(((byte)(21)))));
@@ -425,10 +440,11 @@
             this.panel1.Controls.Add(this.tableLayoutPanel1);
             this.panel1.Controls.Add(this.panel2);
             this.panel1.Controls.Add(this.roundedButton1);
-            this.panel1.Location = new System.Drawing.Point(946, 3);
+            this.panel1.Location = new System.Drawing.Point(2, 190);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(937, 227);
-            this.panel1.TabIndex = 13;
+            this.panel1.Size = new System.Drawing.Size(150, 439);
+            this.panel1.TabIndex = 0;
             // 
             // tableLayoutPanel1
             // 
@@ -438,24 +454,26 @@
             this.tableLayoutPanel1.Controls.Add(this.label2, 0, 3);
             this.tableLayoutPanel1.Controls.Add(this.label3, 0, 1);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(247, 0);
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
+            this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 4;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 29.62963F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 70.37037F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 31F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 29F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(690, 142);
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 24F));
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(0, 115);
             this.tableLayoutPanel1.TabIndex = 9;
             // 
             // label1
             // 
             this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Montserrat", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(3, 86);
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(2, 70);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(684, 21);
+            this.label1.Size = new System.Drawing.Size(1, 15);
             this.label1.TabIndex = 4;
             this.label1.Text = "Author: Reid, Taylor Jenkins";
             // 
@@ -463,10 +481,11 @@
             // 
             this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Montserrat", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(3, 116);
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(2, 95);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(684, 21);
+            this.label2.Size = new System.Drawing.Size(1, 15);
             this.label2.TabIndex = 5;
             this.label2.Text = "ISBN: 9781501139239";
             // 
@@ -474,54 +493,24 @@
             // 
             this.label3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Montserrat ExtraBold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(185)))), ((int)(((byte)(84)))));
-            this.label3.Location = new System.Drawing.Point(3, 39);
+            this.label3.Location = new System.Drawing.Point(2, 32);
+            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(684, 27);
+            this.label3.Size = new System.Drawing.Size(1, 20);
             this.label3.TabIndex = 3;
             this.label3.Text = "THE SEVEN HUSBANDS OF EVELYN HUGO";
             // 
             // panel2
             // 
-            this.panel2.Controls.Add(this.pictureBox1);
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel2.Location = new System.Drawing.Point(0, 0);
+            this.panel2.BackColor = System.Drawing.Color.Brown;
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Right;
+            this.panel2.Location = new System.Drawing.Point(-168, 0);
+            this.panel2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(247, 227);
-            this.panel2.TabIndex = 7;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.pictureBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(190)))), ((int)(((byte)(143)))));
-            this.pictureBox1.Location = new System.Drawing.Point(54, 17);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(168, 189);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 2;
-            this.pictureBox1.TabStop = false;
-            // 
-            // roundedButton1
-            // 
-            this.roundedButton1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.roundedButton1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(185)))), ((int)(((byte)(84)))));
-            this.roundedButton1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(185)))), ((int)(((byte)(84)))));
-            this.roundedButton1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(185)))), ((int)(((byte)(84)))));
-            this.roundedButton1.BorderRadius = 40;
-            this.roundedButton1.BorderSize = 0;
-            this.roundedButton1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.roundedButton1.FlatAppearance.BorderSize = 0;
-            this.roundedButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.roundedButton1.Font = new System.Drawing.Font("Montserrat", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.roundedButton1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(21)))), ((int)(((byte)(21)))));
-            this.roundedButton1.Location = new System.Drawing.Point(253, 153);
-            this.roundedButton1.Name = "roundedButton1";
-            this.roundedButton1.Size = new System.Drawing.Size(668, 45);
-            this.roundedButton1.TabIndex = 6;
-            this.roundedButton1.Text = "VIEW BOOK";
-            this.roundedButton1.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(21)))), ((int)(((byte)(21)))));
-            this.roundedButton1.UseVisualStyleBackColor = false;
+            this.panel2.Size = new System.Drawing.Size(318, 439);
+            this.panel2.TabIndex = 1;
             // 
             // panel3
             // 
@@ -530,9 +519,10 @@
             this.panel3.Controls.Add(this.tableLayoutPanel2);
             this.panel3.Controls.Add(this.panel4);
             this.panel3.Controls.Add(this.roundedButton2);
-            this.panel3.Location = new System.Drawing.Point(3, 236);
+            this.panel3.Location = new System.Drawing.Point(2, 633);
+            this.panel3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(937, 227);
+            this.panel3.Size = new System.Drawing.Size(703, 184);
             this.panel3.TabIndex = 14;
             // 
             // tableLayoutPanel2
@@ -543,24 +533,26 @@
             this.tableLayoutPanel2.Controls.Add(this.label5, 0, 3);
             this.tableLayoutPanel2.Controls.Add(this.label6, 0, 1);
             this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.tableLayoutPanel2.Location = new System.Drawing.Point(247, 0);
+            this.tableLayoutPanel2.Location = new System.Drawing.Point(0, 0);
+            this.tableLayoutPanel2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
             this.tableLayoutPanel2.RowCount = 4;
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 29.62963F));
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 70.37037F));
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 31F));
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 29F));
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(690, 142);
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25F));
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 24F));
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(703, 115);
             this.tableLayoutPanel2.TabIndex = 9;
             // 
             // label4
             // 
             this.label4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Montserrat", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(3, 86);
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(2, 70);
+            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(684, 21);
+            this.label4.Size = new System.Drawing.Size(699, 15);
             this.label4.TabIndex = 4;
             this.label4.Text = "Author: Reid, Taylor Jenkins";
             // 
@@ -568,10 +560,11 @@
             // 
             this.label5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Montserrat", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(3, 116);
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(2, 95);
+            this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(684, 21);
+            this.label5.Size = new System.Drawing.Size(699, 15);
             this.label5.TabIndex = 5;
             this.label5.Text = "ISBN: 9781501139239";
             // 
@@ -579,30 +572,34 @@
             // 
             this.label6.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Montserrat ExtraBold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(185)))), ((int)(((byte)(84)))));
-            this.label6.Location = new System.Drawing.Point(3, 39);
+            this.label6.Location = new System.Drawing.Point(2, 32);
+            this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(684, 27);
+            this.label6.Size = new System.Drawing.Size(699, 20);
             this.label6.TabIndex = 3;
             this.label6.Text = "THE SEVEN HUSBANDS OF EVELYN HUGO";
             // 
             // panel4
             // 
+            this.panel4.BackColor = System.Drawing.Color.BurlyWood;
             this.panel4.Controls.Add(this.pictureBox2);
-            this.panel4.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel4.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel4.Location = new System.Drawing.Point(0, 0);
+            this.panel4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(247, 227);
-            this.panel4.TabIndex = 7;
+            this.panel4.Size = new System.Drawing.Size(703, 184);
+            this.panel4.TabIndex = 2;
             // 
             // pictureBox2
             // 
             this.pictureBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.pictureBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(190)))), ((int)(((byte)(143)))));
-            this.pictureBox2.Location = new System.Drawing.Point(54, 17);
+            this.pictureBox2.Location = new System.Drawing.Point(40, -114);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(168, 189);
+            this.pictureBox2.Size = new System.Drawing.Size(259, 154);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox2.TabIndex = 2;
             this.pictureBox2.TabStop = false;
@@ -618,15 +615,38 @@
             this.roundedButton2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.roundedButton2.FlatAppearance.BorderSize = 0;
             this.roundedButton2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.roundedButton2.Font = new System.Drawing.Font("Montserrat", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.roundedButton2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.roundedButton2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(21)))), ((int)(((byte)(21)))));
-            this.roundedButton2.Location = new System.Drawing.Point(253, 153);
+            this.roundedButton2.Location = new System.Drawing.Point(190, 124);
+            this.roundedButton2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.roundedButton2.Name = "roundedButton2";
-            this.roundedButton2.Size = new System.Drawing.Size(668, 45);
+            this.roundedButton2.Size = new System.Drawing.Size(501, 37);
             this.roundedButton2.TabIndex = 6;
             this.roundedButton2.Text = "VIEW BOOK";
             this.roundedButton2.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(21)))), ((int)(((byte)(21)))));
             this.roundedButton2.UseVisualStyleBackColor = false;
+            // 
+            // roundedButton1
+            // 
+            this.roundedButton1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.roundedButton1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(185)))), ((int)(((byte)(84)))));
+            this.roundedButton1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(185)))), ((int)(((byte)(84)))));
+            this.roundedButton1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(185)))), ((int)(((byte)(84)))));
+            this.roundedButton1.BorderRadius = 40;
+            this.roundedButton1.BorderSize = 0;
+            this.roundedButton1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.roundedButton1.FlatAppearance.BorderSize = 0;
+            this.roundedButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.roundedButton1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.roundedButton1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(21)))), ((int)(((byte)(21)))));
+            this.roundedButton1.Location = new System.Drawing.Point(190, 124);
+            this.roundedButton1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.roundedButton1.Name = "roundedButton1";
+            this.roundedButton1.Size = new System.Drawing.Size(501, 37);
+            this.roundedButton1.TabIndex = 6;
+            this.roundedButton1.Text = "VIEW BOOK";
+            this.roundedButton1.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(21)))), ((int)(((byte)(21)))));
+            this.roundedButton1.UseVisualStyleBackColor = false;
             // 
             // panel5
             // 
@@ -635,9 +655,10 @@
             this.panel5.Controls.Add(this.tableLayoutPanel3);
             this.panel5.Controls.Add(this.panel6);
             this.panel5.Controls.Add(this.roundedButton3);
-            this.panel5.Location = new System.Drawing.Point(946, 236);
+            this.panel5.Location = new System.Drawing.Point(2, 821);
+            this.panel5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(937, 227);
+            this.panel5.Size = new System.Drawing.Size(703, 184);
             this.panel5.TabIndex = 15;
             // 
             // tableLayoutPanel3
@@ -648,24 +669,26 @@
             this.tableLayoutPanel3.Controls.Add(this.label8, 0, 3);
             this.tableLayoutPanel3.Controls.Add(this.label9, 0, 1);
             this.tableLayoutPanel3.Dock = System.Windows.Forms.DockStyle.Top;
-            this.tableLayoutPanel3.Location = new System.Drawing.Point(247, 0);
+            this.tableLayoutPanel3.Location = new System.Drawing.Point(185, 0);
+            this.tableLayoutPanel3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.tableLayoutPanel3.Name = "tableLayoutPanel3";
             this.tableLayoutPanel3.RowCount = 4;
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 29.62963F));
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 70.37037F));
-            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 31F));
-            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 29F));
-            this.tableLayoutPanel3.Size = new System.Drawing.Size(690, 142);
+            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25F));
+            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 24F));
+            this.tableLayoutPanel3.Size = new System.Drawing.Size(518, 115);
             this.tableLayoutPanel3.TabIndex = 9;
             // 
             // label7
             // 
             this.label7.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Montserrat", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(3, 86);
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(2, 70);
+            this.label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(684, 21);
+            this.label7.Size = new System.Drawing.Size(514, 15);
             this.label7.TabIndex = 4;
             this.label7.Text = "Author: Reid, Taylor Jenkins";
             // 
@@ -673,10 +696,11 @@
             // 
             this.label8.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Montserrat", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(3, 116);
+            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Location = new System.Drawing.Point(2, 95);
+            this.label8.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(684, 21);
+            this.label8.Size = new System.Drawing.Size(514, 15);
             this.label8.TabIndex = 5;
             this.label8.Text = "ISBN: 9781501139239";
             // 
@@ -684,11 +708,12 @@
             // 
             this.label9.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Montserrat ExtraBold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(185)))), ((int)(((byte)(84)))));
-            this.label9.Location = new System.Drawing.Point(3, 39);
+            this.label9.Location = new System.Drawing.Point(2, 32);
+            this.label9.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(684, 27);
+            this.label9.Size = new System.Drawing.Size(514, 20);
             this.label9.TabIndex = 3;
             this.label9.Text = "THE SEVEN HUSBANDS OF EVELYN HUGO";
             // 
@@ -697,17 +722,19 @@
             this.panel6.Controls.Add(this.pictureBox3);
             this.panel6.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel6.Location = new System.Drawing.Point(0, 0);
+            this.panel6.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(247, 227);
+            this.panel6.Size = new System.Drawing.Size(185, 184);
             this.panel6.TabIndex = 7;
             // 
             // pictureBox3
             // 
             this.pictureBox3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.pictureBox3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(190)))), ((int)(((byte)(143)))));
-            this.pictureBox3.Location = new System.Drawing.Point(54, 17);
+            this.pictureBox3.Location = new System.Drawing.Point(40, 14);
+            this.pictureBox3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(168, 189);
+            this.pictureBox3.Size = new System.Drawing.Size(126, 154);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox3.TabIndex = 2;
             this.pictureBox3.TabStop = false;
@@ -723,11 +750,12 @@
             this.roundedButton3.Cursor = System.Windows.Forms.Cursors.Hand;
             this.roundedButton3.FlatAppearance.BorderSize = 0;
             this.roundedButton3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.roundedButton3.Font = new System.Drawing.Font("Montserrat", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.roundedButton3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.roundedButton3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(21)))), ((int)(((byte)(21)))));
-            this.roundedButton3.Location = new System.Drawing.Point(253, 153);
+            this.roundedButton3.Location = new System.Drawing.Point(190, 124);
+            this.roundedButton3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.roundedButton3.Name = "roundedButton3";
-            this.roundedButton3.Size = new System.Drawing.Size(668, 45);
+            this.roundedButton3.Size = new System.Drawing.Size(501, 37);
             this.roundedButton3.TabIndex = 6;
             this.roundedButton3.Text = "VIEW BOOK";
             this.roundedButton3.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(21)))), ((int)(((byte)(21)))));
@@ -740,9 +768,10 @@
             this.panel7.Controls.Add(this.tableLayoutPanel4);
             this.panel7.Controls.Add(this.panel8);
             this.panel7.Controls.Add(this.roundedButton4);
-            this.panel7.Location = new System.Drawing.Point(3, 469);
+            this.panel7.Location = new System.Drawing.Point(2, 1009);
+            this.panel7.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(937, 227);
+            this.panel7.Size = new System.Drawing.Size(703, 184);
             this.panel7.TabIndex = 16;
             // 
             // tableLayoutPanel4
@@ -753,24 +782,26 @@
             this.tableLayoutPanel4.Controls.Add(this.label11, 0, 3);
             this.tableLayoutPanel4.Controls.Add(this.label12, 0, 1);
             this.tableLayoutPanel4.Dock = System.Windows.Forms.DockStyle.Top;
-            this.tableLayoutPanel4.Location = new System.Drawing.Point(247, 0);
+            this.tableLayoutPanel4.Location = new System.Drawing.Point(185, 0);
+            this.tableLayoutPanel4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.tableLayoutPanel4.Name = "tableLayoutPanel4";
             this.tableLayoutPanel4.RowCount = 4;
             this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 29.62963F));
             this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 70.37037F));
-            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 31F));
-            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 29F));
-            this.tableLayoutPanel4.Size = new System.Drawing.Size(690, 142);
+            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25F));
+            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 24F));
+            this.tableLayoutPanel4.Size = new System.Drawing.Size(518, 115);
             this.tableLayoutPanel4.TabIndex = 9;
             // 
             // label10
             // 
             this.label10.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Montserrat", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(3, 86);
+            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.Location = new System.Drawing.Point(2, 70);
+            this.label10.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(684, 21);
+            this.label10.Size = new System.Drawing.Size(514, 15);
             this.label10.TabIndex = 4;
             this.label10.Text = "Author: Reid, Taylor Jenkins";
             // 
@@ -778,10 +809,11 @@
             // 
             this.label11.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("Montserrat", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(3, 116);
+            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.Location = new System.Drawing.Point(2, 95);
+            this.label11.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(684, 21);
+            this.label11.Size = new System.Drawing.Size(514, 15);
             this.label11.TabIndex = 5;
             this.label11.Text = "ISBN: 9781501139239";
             // 
@@ -789,11 +821,12 @@
             // 
             this.label12.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.label12.AutoSize = true;
-            this.label12.Font = new System.Drawing.Font("Montserrat ExtraBold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label12.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(185)))), ((int)(((byte)(84)))));
-            this.label12.Location = new System.Drawing.Point(3, 39);
+            this.label12.Location = new System.Drawing.Point(2, 32);
+            this.label12.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(684, 27);
+            this.label12.Size = new System.Drawing.Size(514, 20);
             this.label12.TabIndex = 3;
             this.label12.Text = "THE SEVEN HUSBANDS OF EVELYN HUGO";
             // 
@@ -802,17 +835,19 @@
             this.panel8.Controls.Add(this.pictureBox4);
             this.panel8.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel8.Location = new System.Drawing.Point(0, 0);
+            this.panel8.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(247, 227);
+            this.panel8.Size = new System.Drawing.Size(185, 184);
             this.panel8.TabIndex = 7;
             // 
             // pictureBox4
             // 
             this.pictureBox4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.pictureBox4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(190)))), ((int)(((byte)(143)))));
-            this.pictureBox4.Location = new System.Drawing.Point(54, 17);
+            this.pictureBox4.Location = new System.Drawing.Point(40, 14);
+            this.pictureBox4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(168, 189);
+            this.pictureBox4.Size = new System.Drawing.Size(126, 154);
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox4.TabIndex = 2;
             this.pictureBox4.TabStop = false;
@@ -828,11 +863,12 @@
             this.roundedButton4.Cursor = System.Windows.Forms.Cursors.Hand;
             this.roundedButton4.FlatAppearance.BorderSize = 0;
             this.roundedButton4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.roundedButton4.Font = new System.Drawing.Font("Montserrat", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.roundedButton4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.roundedButton4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(21)))), ((int)(((byte)(21)))));
-            this.roundedButton4.Location = new System.Drawing.Point(253, 153);
+            this.roundedButton4.Location = new System.Drawing.Point(190, 124);
+            this.roundedButton4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.roundedButton4.Name = "roundedButton4";
-            this.roundedButton4.Size = new System.Drawing.Size(668, 45);
+            this.roundedButton4.Size = new System.Drawing.Size(501, 37);
             this.roundedButton4.TabIndex = 6;
             this.roundedButton4.Text = "VIEW BOOK";
             this.roundedButton4.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(21)))), ((int)(((byte)(21)))));
@@ -845,9 +881,10 @@
             this.panel9.Controls.Add(this.tableLayoutPanel5);
             this.panel9.Controls.Add(this.panel10);
             this.panel9.Controls.Add(this.roundedButton5);
-            this.panel9.Location = new System.Drawing.Point(946, 469);
+            this.panel9.Location = new System.Drawing.Point(2, 1197);
+            this.panel9.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel9.Name = "panel9";
-            this.panel9.Size = new System.Drawing.Size(937, 227);
+            this.panel9.Size = new System.Drawing.Size(703, 184);
             this.panel9.TabIndex = 17;
             // 
             // tableLayoutPanel5
@@ -858,24 +895,26 @@
             this.tableLayoutPanel5.Controls.Add(this.label14, 0, 3);
             this.tableLayoutPanel5.Controls.Add(this.label15, 0, 1);
             this.tableLayoutPanel5.Dock = System.Windows.Forms.DockStyle.Top;
-            this.tableLayoutPanel5.Location = new System.Drawing.Point(247, 0);
+            this.tableLayoutPanel5.Location = new System.Drawing.Point(185, 0);
+            this.tableLayoutPanel5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.tableLayoutPanel5.Name = "tableLayoutPanel5";
             this.tableLayoutPanel5.RowCount = 4;
             this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 29.62963F));
             this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 70.37037F));
-            this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 31F));
-            this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 29F));
-            this.tableLayoutPanel5.Size = new System.Drawing.Size(690, 142);
+            this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25F));
+            this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 24F));
+            this.tableLayoutPanel5.Size = new System.Drawing.Size(518, 115);
             this.tableLayoutPanel5.TabIndex = 9;
             // 
             // label13
             // 
             this.label13.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.label13.AutoSize = true;
-            this.label13.Font = new System.Drawing.Font("Montserrat", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.Location = new System.Drawing.Point(3, 86);
+            this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.Location = new System.Drawing.Point(2, 70);
+            this.label13.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(684, 21);
+            this.label13.Size = new System.Drawing.Size(514, 15);
             this.label13.TabIndex = 4;
             this.label13.Text = "Author: Reid, Taylor Jenkins";
             // 
@@ -883,10 +922,11 @@
             // 
             this.label14.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.label14.AutoSize = true;
-            this.label14.Font = new System.Drawing.Font("Montserrat", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.Location = new System.Drawing.Point(3, 116);
+            this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label14.Location = new System.Drawing.Point(2, 95);
+            this.label14.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(684, 21);
+            this.label14.Size = new System.Drawing.Size(514, 15);
             this.label14.TabIndex = 5;
             this.label14.Text = "ISBN: 9781501139239";
             // 
@@ -894,11 +934,12 @@
             // 
             this.label15.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.label15.AutoSize = true;
-            this.label15.Font = new System.Drawing.Font("Montserrat ExtraBold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label15.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(185)))), ((int)(((byte)(84)))));
-            this.label15.Location = new System.Drawing.Point(3, 39);
+            this.label15.Location = new System.Drawing.Point(2, 32);
+            this.label15.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(684, 27);
+            this.label15.Size = new System.Drawing.Size(514, 20);
             this.label15.TabIndex = 3;
             this.label15.Text = "THE SEVEN HUSBANDS OF EVELYN HUGO";
             // 
@@ -907,17 +948,19 @@
             this.panel10.Controls.Add(this.pictureBox5);
             this.panel10.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel10.Location = new System.Drawing.Point(0, 0);
+            this.panel10.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel10.Name = "panel10";
-            this.panel10.Size = new System.Drawing.Size(247, 227);
+            this.panel10.Size = new System.Drawing.Size(185, 184);
             this.panel10.TabIndex = 7;
             // 
             // pictureBox5
             // 
             this.pictureBox5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.pictureBox5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(190)))), ((int)(((byte)(143)))));
-            this.pictureBox5.Location = new System.Drawing.Point(54, 17);
+            this.pictureBox5.Location = new System.Drawing.Point(40, 14);
+            this.pictureBox5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(168, 189);
+            this.pictureBox5.Size = new System.Drawing.Size(126, 154);
             this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox5.TabIndex = 2;
             this.pictureBox5.TabStop = false;
@@ -933,11 +976,12 @@
             this.roundedButton5.Cursor = System.Windows.Forms.Cursors.Hand;
             this.roundedButton5.FlatAppearance.BorderSize = 0;
             this.roundedButton5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.roundedButton5.Font = new System.Drawing.Font("Montserrat", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.roundedButton5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.roundedButton5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(21)))), ((int)(((byte)(21)))));
-            this.roundedButton5.Location = new System.Drawing.Point(253, 153);
+            this.roundedButton5.Location = new System.Drawing.Point(190, 124);
+            this.roundedButton5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.roundedButton5.Name = "roundedButton5";
-            this.roundedButton5.Size = new System.Drawing.Size(668, 45);
+            this.roundedButton5.Size = new System.Drawing.Size(501, 37);
             this.roundedButton5.TabIndex = 6;
             this.roundedButton5.Text = "VIEW BOOK";
             this.roundedButton5.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(21)))), ((int)(((byte)(21)))));
@@ -950,9 +994,10 @@
             this.panel11.Controls.Add(this.tableLayoutPanel6);
             this.panel11.Controls.Add(this.panel12);
             this.panel11.Controls.Add(this.roundedButton6);
-            this.panel11.Location = new System.Drawing.Point(3, 702);
+            this.panel11.Location = new System.Drawing.Point(2, 1385);
+            this.panel11.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel11.Name = "panel11";
-            this.panel11.Size = new System.Drawing.Size(937, 227);
+            this.panel11.Size = new System.Drawing.Size(703, 184);
             this.panel11.TabIndex = 18;
             // 
             // tableLayoutPanel6
@@ -963,24 +1008,26 @@
             this.tableLayoutPanel6.Controls.Add(this.label17, 0, 3);
             this.tableLayoutPanel6.Controls.Add(this.label18, 0, 1);
             this.tableLayoutPanel6.Dock = System.Windows.Forms.DockStyle.Top;
-            this.tableLayoutPanel6.Location = new System.Drawing.Point(247, 0);
+            this.tableLayoutPanel6.Location = new System.Drawing.Point(185, 0);
+            this.tableLayoutPanel6.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.tableLayoutPanel6.Name = "tableLayoutPanel6";
             this.tableLayoutPanel6.RowCount = 4;
             this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 29.62963F));
             this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 70.37037F));
-            this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 31F));
-            this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 29F));
-            this.tableLayoutPanel6.Size = new System.Drawing.Size(690, 142);
+            this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25F));
+            this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 24F));
+            this.tableLayoutPanel6.Size = new System.Drawing.Size(518, 115);
             this.tableLayoutPanel6.TabIndex = 9;
             // 
             // label16
             // 
             this.label16.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.label16.AutoSize = true;
-            this.label16.Font = new System.Drawing.Font("Montserrat", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label16.Location = new System.Drawing.Point(3, 86);
+            this.label16.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label16.Location = new System.Drawing.Point(2, 70);
+            this.label16.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(684, 21);
+            this.label16.Size = new System.Drawing.Size(514, 15);
             this.label16.TabIndex = 4;
             this.label16.Text = "Author: Reid, Taylor Jenkins";
             // 
@@ -988,10 +1035,11 @@
             // 
             this.label17.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.label17.AutoSize = true;
-            this.label17.Font = new System.Drawing.Font("Montserrat", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label17.Location = new System.Drawing.Point(3, 116);
+            this.label17.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label17.Location = new System.Drawing.Point(2, 95);
+            this.label17.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(684, 21);
+            this.label17.Size = new System.Drawing.Size(514, 15);
             this.label17.TabIndex = 5;
             this.label17.Text = "ISBN: 9781501139239";
             // 
@@ -999,11 +1047,12 @@
             // 
             this.label18.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.label18.AutoSize = true;
-            this.label18.Font = new System.Drawing.Font("Montserrat ExtraBold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label18.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label18.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(185)))), ((int)(((byte)(84)))));
-            this.label18.Location = new System.Drawing.Point(3, 39);
+            this.label18.Location = new System.Drawing.Point(2, 32);
+            this.label18.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(684, 27);
+            this.label18.Size = new System.Drawing.Size(514, 20);
             this.label18.TabIndex = 3;
             this.label18.Text = "THE SEVEN HUSBANDS OF EVELYN HUGO";
             // 
@@ -1012,17 +1061,19 @@
             this.panel12.Controls.Add(this.pictureBox6);
             this.panel12.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel12.Location = new System.Drawing.Point(0, 0);
+            this.panel12.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel12.Name = "panel12";
-            this.panel12.Size = new System.Drawing.Size(247, 227);
+            this.panel12.Size = new System.Drawing.Size(185, 184);
             this.panel12.TabIndex = 7;
             // 
             // pictureBox6
             // 
             this.pictureBox6.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.pictureBox6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(190)))), ((int)(((byte)(143)))));
-            this.pictureBox6.Location = new System.Drawing.Point(54, 17);
+            this.pictureBox6.Location = new System.Drawing.Point(40, 14);
+            this.pictureBox6.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(168, 189);
+            this.pictureBox6.Size = new System.Drawing.Size(126, 154);
             this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox6.TabIndex = 2;
             this.pictureBox6.TabStop = false;
@@ -1038,11 +1089,12 @@
             this.roundedButton6.Cursor = System.Windows.Forms.Cursors.Hand;
             this.roundedButton6.FlatAppearance.BorderSize = 0;
             this.roundedButton6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.roundedButton6.Font = new System.Drawing.Font("Montserrat", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.roundedButton6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.roundedButton6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(21)))), ((int)(((byte)(21)))));
-            this.roundedButton6.Location = new System.Drawing.Point(253, 153);
+            this.roundedButton6.Location = new System.Drawing.Point(190, 124);
+            this.roundedButton6.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.roundedButton6.Name = "roundedButton6";
-            this.roundedButton6.Size = new System.Drawing.Size(668, 45);
+            this.roundedButton6.Size = new System.Drawing.Size(501, 37);
             this.roundedButton6.TabIndex = 6;
             this.roundedButton6.Text = "VIEW BOOK";
             this.roundedButton6.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(21)))), ((int)(((byte)(21)))));
@@ -1055,9 +1107,10 @@
             this.panel13.Controls.Add(this.tableLayoutPanel7);
             this.panel13.Controls.Add(this.panel14);
             this.panel13.Controls.Add(this.roundedButton7);
-            this.panel13.Location = new System.Drawing.Point(946, 702);
+            this.panel13.Location = new System.Drawing.Point(2, 1573);
+            this.panel13.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel13.Name = "panel13";
-            this.panel13.Size = new System.Drawing.Size(937, 227);
+            this.panel13.Size = new System.Drawing.Size(703, 184);
             this.panel13.TabIndex = 19;
             // 
             // tableLayoutPanel7
@@ -1068,24 +1121,26 @@
             this.tableLayoutPanel7.Controls.Add(this.label20, 0, 3);
             this.tableLayoutPanel7.Controls.Add(this.label21, 0, 1);
             this.tableLayoutPanel7.Dock = System.Windows.Forms.DockStyle.Top;
-            this.tableLayoutPanel7.Location = new System.Drawing.Point(247, 0);
+            this.tableLayoutPanel7.Location = new System.Drawing.Point(185, 0);
+            this.tableLayoutPanel7.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.tableLayoutPanel7.Name = "tableLayoutPanel7";
             this.tableLayoutPanel7.RowCount = 4;
             this.tableLayoutPanel7.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 29.62963F));
             this.tableLayoutPanel7.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 70.37037F));
-            this.tableLayoutPanel7.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 31F));
-            this.tableLayoutPanel7.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 29F));
-            this.tableLayoutPanel7.Size = new System.Drawing.Size(690, 142);
+            this.tableLayoutPanel7.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25F));
+            this.tableLayoutPanel7.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 24F));
+            this.tableLayoutPanel7.Size = new System.Drawing.Size(518, 115);
             this.tableLayoutPanel7.TabIndex = 9;
             // 
             // label19
             // 
             this.label19.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.label19.AutoSize = true;
-            this.label19.Font = new System.Drawing.Font("Montserrat", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label19.Location = new System.Drawing.Point(3, 86);
+            this.label19.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label19.Location = new System.Drawing.Point(2, 70);
+            this.label19.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(684, 21);
+            this.label19.Size = new System.Drawing.Size(514, 15);
             this.label19.TabIndex = 4;
             this.label19.Text = "Author: Reid, Taylor Jenkins";
             // 
@@ -1093,10 +1148,11 @@
             // 
             this.label20.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.label20.AutoSize = true;
-            this.label20.Font = new System.Drawing.Font("Montserrat", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label20.Location = new System.Drawing.Point(3, 116);
+            this.label20.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label20.Location = new System.Drawing.Point(2, 95);
+            this.label20.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(684, 21);
+            this.label20.Size = new System.Drawing.Size(514, 15);
             this.label20.TabIndex = 5;
             this.label20.Text = "ISBN: 9781501139239";
             // 
@@ -1104,11 +1160,12 @@
             // 
             this.label21.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.label21.AutoSize = true;
-            this.label21.Font = new System.Drawing.Font("Montserrat ExtraBold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label21.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label21.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(185)))), ((int)(((byte)(84)))));
-            this.label21.Location = new System.Drawing.Point(3, 39);
+            this.label21.Location = new System.Drawing.Point(2, 32);
+            this.label21.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(684, 27);
+            this.label21.Size = new System.Drawing.Size(514, 20);
             this.label21.TabIndex = 3;
             this.label21.Text = "THE SEVEN HUSBANDS OF EVELYN HUGO";
             // 
@@ -1117,17 +1174,19 @@
             this.panel14.Controls.Add(this.pictureBox7);
             this.panel14.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel14.Location = new System.Drawing.Point(0, 0);
+            this.panel14.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel14.Name = "panel14";
-            this.panel14.Size = new System.Drawing.Size(247, 227);
+            this.panel14.Size = new System.Drawing.Size(185, 184);
             this.panel14.TabIndex = 7;
             // 
             // pictureBox7
             // 
             this.pictureBox7.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.pictureBox7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(190)))), ((int)(((byte)(143)))));
-            this.pictureBox7.Location = new System.Drawing.Point(54, 17);
+            this.pictureBox7.Location = new System.Drawing.Point(40, 14);
+            this.pictureBox7.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pictureBox7.Name = "pictureBox7";
-            this.pictureBox7.Size = new System.Drawing.Size(168, 189);
+            this.pictureBox7.Size = new System.Drawing.Size(126, 154);
             this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox7.TabIndex = 2;
             this.pictureBox7.TabStop = false;
@@ -1143,11 +1202,12 @@
             this.roundedButton7.Cursor = System.Windows.Forms.Cursors.Hand;
             this.roundedButton7.FlatAppearance.BorderSize = 0;
             this.roundedButton7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.roundedButton7.Font = new System.Drawing.Font("Montserrat", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.roundedButton7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.roundedButton7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(21)))), ((int)(((byte)(21)))));
-            this.roundedButton7.Location = new System.Drawing.Point(253, 153);
+            this.roundedButton7.Location = new System.Drawing.Point(190, 124);
+            this.roundedButton7.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.roundedButton7.Name = "roundedButton7";
-            this.roundedButton7.Size = new System.Drawing.Size(668, 45);
+            this.roundedButton7.Size = new System.Drawing.Size(501, 37);
             this.roundedButton7.TabIndex = 6;
             this.roundedButton7.Text = "VIEW BOOK";
             this.roundedButton7.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(21)))), ((int)(((byte)(21)))));
@@ -1160,9 +1220,10 @@
             this.panel15.Controls.Add(this.tableLayoutPanel8);
             this.panel15.Controls.Add(this.panel16);
             this.panel15.Controls.Add(this.roundedButton8);
-            this.panel15.Location = new System.Drawing.Point(3, 935);
+            this.panel15.Location = new System.Drawing.Point(2, 1761);
+            this.panel15.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel15.Name = "panel15";
-            this.panel15.Size = new System.Drawing.Size(937, 227);
+            this.panel15.Size = new System.Drawing.Size(703, 184);
             this.panel15.TabIndex = 20;
             // 
             // tableLayoutPanel8
@@ -1173,24 +1234,26 @@
             this.tableLayoutPanel8.Controls.Add(this.label23, 0, 3);
             this.tableLayoutPanel8.Controls.Add(this.label24, 0, 1);
             this.tableLayoutPanel8.Dock = System.Windows.Forms.DockStyle.Top;
-            this.tableLayoutPanel8.Location = new System.Drawing.Point(247, 0);
+            this.tableLayoutPanel8.Location = new System.Drawing.Point(185, 0);
+            this.tableLayoutPanel8.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.tableLayoutPanel8.Name = "tableLayoutPanel8";
             this.tableLayoutPanel8.RowCount = 4;
             this.tableLayoutPanel8.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 29.62963F));
             this.tableLayoutPanel8.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 70.37037F));
-            this.tableLayoutPanel8.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 31F));
-            this.tableLayoutPanel8.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 29F));
-            this.tableLayoutPanel8.Size = new System.Drawing.Size(690, 142);
+            this.tableLayoutPanel8.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25F));
+            this.tableLayoutPanel8.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 24F));
+            this.tableLayoutPanel8.Size = new System.Drawing.Size(518, 115);
             this.tableLayoutPanel8.TabIndex = 9;
             // 
             // label22
             // 
             this.label22.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.label22.AutoSize = true;
-            this.label22.Font = new System.Drawing.Font("Montserrat", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label22.Location = new System.Drawing.Point(3, 86);
+            this.label22.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label22.Location = new System.Drawing.Point(2, 70);
+            this.label22.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(684, 21);
+            this.label22.Size = new System.Drawing.Size(514, 15);
             this.label22.TabIndex = 4;
             this.label22.Text = "Author: Reid, Taylor Jenkins";
             // 
@@ -1198,10 +1261,11 @@
             // 
             this.label23.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.label23.AutoSize = true;
-            this.label23.Font = new System.Drawing.Font("Montserrat", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label23.Location = new System.Drawing.Point(3, 116);
+            this.label23.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label23.Location = new System.Drawing.Point(2, 95);
+            this.label23.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(684, 21);
+            this.label23.Size = new System.Drawing.Size(514, 15);
             this.label23.TabIndex = 5;
             this.label23.Text = "ISBN: 9781501139239";
             // 
@@ -1209,11 +1273,12 @@
             // 
             this.label24.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.label24.AutoSize = true;
-            this.label24.Font = new System.Drawing.Font("Montserrat ExtraBold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label24.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label24.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(185)))), ((int)(((byte)(84)))));
-            this.label24.Location = new System.Drawing.Point(3, 39);
+            this.label24.Location = new System.Drawing.Point(2, 32);
+            this.label24.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label24.Name = "label24";
-            this.label24.Size = new System.Drawing.Size(684, 27);
+            this.label24.Size = new System.Drawing.Size(514, 20);
             this.label24.TabIndex = 3;
             this.label24.Text = "THE SEVEN HUSBANDS OF EVELYN HUGO";
             // 
@@ -1222,17 +1287,19 @@
             this.panel16.Controls.Add(this.pictureBox8);
             this.panel16.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel16.Location = new System.Drawing.Point(0, 0);
+            this.panel16.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel16.Name = "panel16";
-            this.panel16.Size = new System.Drawing.Size(247, 227);
+            this.panel16.Size = new System.Drawing.Size(185, 184);
             this.panel16.TabIndex = 7;
             // 
             // pictureBox8
             // 
             this.pictureBox8.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.pictureBox8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(190)))), ((int)(((byte)(143)))));
-            this.pictureBox8.Location = new System.Drawing.Point(54, 17);
+            this.pictureBox8.Location = new System.Drawing.Point(40, 14);
+            this.pictureBox8.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pictureBox8.Name = "pictureBox8";
-            this.pictureBox8.Size = new System.Drawing.Size(168, 189);
+            this.pictureBox8.Size = new System.Drawing.Size(126, 154);
             this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox8.TabIndex = 2;
             this.pictureBox8.TabStop = false;
@@ -1248,11 +1315,12 @@
             this.roundedButton8.Cursor = System.Windows.Forms.Cursors.Hand;
             this.roundedButton8.FlatAppearance.BorderSize = 0;
             this.roundedButton8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.roundedButton8.Font = new System.Drawing.Font("Montserrat", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.roundedButton8.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.roundedButton8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(21)))), ((int)(((byte)(21)))));
-            this.roundedButton8.Location = new System.Drawing.Point(253, 153);
+            this.roundedButton8.Location = new System.Drawing.Point(190, 124);
+            this.roundedButton8.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.roundedButton8.Name = "roundedButton8";
-            this.roundedButton8.Size = new System.Drawing.Size(668, 45);
+            this.roundedButton8.Size = new System.Drawing.Size(501, 37);
             this.roundedButton8.TabIndex = 6;
             this.roundedButton8.Text = "VIEW BOOK";
             this.roundedButton8.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(21)))), ((int)(((byte)(21)))));
@@ -1265,9 +1333,10 @@
             this.panel17.Controls.Add(this.tableLayoutPanel9);
             this.panel17.Controls.Add(this.panel18);
             this.panel17.Controls.Add(this.roundedButton9);
-            this.panel17.Location = new System.Drawing.Point(946, 935);
+            this.panel17.Location = new System.Drawing.Point(2, 1949);
+            this.panel17.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel17.Name = "panel17";
-            this.panel17.Size = new System.Drawing.Size(937, 227);
+            this.panel17.Size = new System.Drawing.Size(703, 184);
             this.panel17.TabIndex = 21;
             // 
             // tableLayoutPanel9
@@ -1278,24 +1347,26 @@
             this.tableLayoutPanel9.Controls.Add(this.label26, 0, 3);
             this.tableLayoutPanel9.Controls.Add(this.label27, 0, 1);
             this.tableLayoutPanel9.Dock = System.Windows.Forms.DockStyle.Top;
-            this.tableLayoutPanel9.Location = new System.Drawing.Point(247, 0);
+            this.tableLayoutPanel9.Location = new System.Drawing.Point(185, 0);
+            this.tableLayoutPanel9.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.tableLayoutPanel9.Name = "tableLayoutPanel9";
             this.tableLayoutPanel9.RowCount = 4;
             this.tableLayoutPanel9.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 29.62963F));
             this.tableLayoutPanel9.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 70.37037F));
-            this.tableLayoutPanel9.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 31F));
-            this.tableLayoutPanel9.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 29F));
-            this.tableLayoutPanel9.Size = new System.Drawing.Size(690, 142);
+            this.tableLayoutPanel9.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25F));
+            this.tableLayoutPanel9.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 24F));
+            this.tableLayoutPanel9.Size = new System.Drawing.Size(518, 115);
             this.tableLayoutPanel9.TabIndex = 9;
             // 
             // label25
             // 
             this.label25.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.label25.AutoSize = true;
-            this.label25.Font = new System.Drawing.Font("Montserrat", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label25.Location = new System.Drawing.Point(3, 86);
+            this.label25.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label25.Location = new System.Drawing.Point(2, 70);
+            this.label25.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(684, 21);
+            this.label25.Size = new System.Drawing.Size(514, 15);
             this.label25.TabIndex = 4;
             this.label25.Text = "Author: Reid, Taylor Jenkins";
             // 
@@ -1303,10 +1374,11 @@
             // 
             this.label26.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.label26.AutoSize = true;
-            this.label26.Font = new System.Drawing.Font("Montserrat", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label26.Location = new System.Drawing.Point(3, 116);
+            this.label26.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label26.Location = new System.Drawing.Point(2, 95);
+            this.label26.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label26.Name = "label26";
-            this.label26.Size = new System.Drawing.Size(684, 21);
+            this.label26.Size = new System.Drawing.Size(514, 15);
             this.label26.TabIndex = 5;
             this.label26.Text = "ISBN: 9781501139239";
             // 
@@ -1314,11 +1386,12 @@
             // 
             this.label27.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.label27.AutoSize = true;
-            this.label27.Font = new System.Drawing.Font("Montserrat ExtraBold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label27.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label27.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(185)))), ((int)(((byte)(84)))));
-            this.label27.Location = new System.Drawing.Point(3, 39);
+            this.label27.Location = new System.Drawing.Point(2, 32);
+            this.label27.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label27.Name = "label27";
-            this.label27.Size = new System.Drawing.Size(684, 27);
+            this.label27.Size = new System.Drawing.Size(514, 20);
             this.label27.TabIndex = 3;
             this.label27.Text = "THE SEVEN HUSBANDS OF EVELYN HUGO";
             // 
@@ -1327,17 +1400,19 @@
             this.panel18.Controls.Add(this.pictureBox9);
             this.panel18.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel18.Location = new System.Drawing.Point(0, 0);
+            this.panel18.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel18.Name = "panel18";
-            this.panel18.Size = new System.Drawing.Size(247, 227);
+            this.panel18.Size = new System.Drawing.Size(185, 184);
             this.panel18.TabIndex = 7;
             // 
             // pictureBox9
             // 
             this.pictureBox9.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.pictureBox9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(190)))), ((int)(((byte)(143)))));
-            this.pictureBox9.Location = new System.Drawing.Point(54, 17);
+            this.pictureBox9.Location = new System.Drawing.Point(40, 14);
+            this.pictureBox9.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pictureBox9.Name = "pictureBox9";
-            this.pictureBox9.Size = new System.Drawing.Size(168, 189);
+            this.pictureBox9.Size = new System.Drawing.Size(126, 154);
             this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox9.TabIndex = 2;
             this.pictureBox9.TabStop = false;
@@ -1353,26 +1428,39 @@
             this.roundedButton9.Cursor = System.Windows.Forms.Cursors.Hand;
             this.roundedButton9.FlatAppearance.BorderSize = 0;
             this.roundedButton9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.roundedButton9.Font = new System.Drawing.Font("Montserrat", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.roundedButton9.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.roundedButton9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(21)))), ((int)(((byte)(21)))));
-            this.roundedButton9.Location = new System.Drawing.Point(253, 153);
+            this.roundedButton9.Location = new System.Drawing.Point(190, 124);
+            this.roundedButton9.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.roundedButton9.Name = "roundedButton9";
-            this.roundedButton9.Size = new System.Drawing.Size(668, 45);
+            this.roundedButton9.Size = new System.Drawing.Size(501, 37);
             this.roundedButton9.TabIndex = 6;
             this.roundedButton9.Text = "VIEW BOOK";
             this.roundedButton9.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(21)))), ((int)(((byte)(21)))));
             this.roundedButton9.UseVisualStyleBackColor = false;
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.pictureBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(190)))), ((int)(((byte)(143)))));
+            this.pictureBox1.Location = new System.Drawing.Point(54, 17);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(168, 189);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 2;
+            this.pictureBox1.TabStop = false;
+            // 
             // FORM_LIBRARY
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(21)))), ((int)(((byte)(21)))));
-            this.ClientSize = new System.Drawing.Size(1916, 1055);
+            this.ClientSize = new System.Drawing.Size(720, 439);
             this.Controls.Add(this.booksContainerFlowPanel);
             this.Controls.Add(this.LAYOUT_TOP);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.MinimumSize = new System.Drawing.Size(960, 540);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.MinimumSize = new System.Drawing.Size(720, 439);
             this.Name = "FORM_LIBRARY";
             this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -1390,8 +1478,6 @@
             this.panel1.ResumeLayout(false);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
-            this.panel2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel3.ResumeLayout(false);
             this.tableLayoutPanel2.ResumeLayout(false);
             this.tableLayoutPanel2.PerformLayout();
@@ -1432,6 +1518,7 @@
             this.tableLayoutPanel9.PerformLayout();
             this.panel18.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
