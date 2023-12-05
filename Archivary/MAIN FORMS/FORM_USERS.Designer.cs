@@ -28,12 +28,34 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.LAYOUT_FILL = new System.Windows.Forms.Panel();
+            this.SuspendLayout();
+            // 
+            // LAYOUT_FILL
+            // 
+            this.LAYOUT_FILL.AutoScroll = true;
+            this.LAYOUT_FILL.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.LAYOUT_FILL.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.LAYOUT_FILL.Location = new System.Drawing.Point(0, 0);
+            this.LAYOUT_FILL.Name = "LAYOUT_FILL";
+            this.LAYOUT_FILL.Size = new System.Drawing.Size(1482, 953);
+            this.LAYOUT_FILL.TabIndex = 10;
+            // 
+            // FORM_USERS
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(1482, 953);
+            this.Controls.Add(this.LAYOUT_FILL);
+            this.Name = "FORM_USERS";
             this.Text = "FORM_USERS";
+            this.Load += new System.EventHandler(this.FORM_USERS_Load);
+            this.ResumeLayout(false);
+
         }
 
         #endregion
+
+        private System.Windows.Forms.Panel LAYOUT_FILL;
     }
 }

@@ -48,6 +48,15 @@
             this.LAYOUT_viewButton = new System.Windows.Forms.Panel();
             this.viewButton = new roundedCorners.roundedButton();
             this.LAYOUT4 = new System.Windows.Forms.Panel();
+            this.sidebarButton7 = new sidebarComponents.sidebarButton();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.sidebarButton5 = new sidebarComponents.sidebarButton();
+            this.sidebarButton4 = new sidebarComponents.sidebarButton();
+            this.sidebarButton3 = new sidebarComponents.sidebarButton();
+            this.sidebarButton2 = new sidebarComponents.sidebarButton();
+            this.sidebarButton1 = new sidebarComponents.sidebarButton();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.panel1 = new System.Windows.Forms.Panel();
             this.LAYOUT3 = new System.Windows.Forms.Panel();
             this.nameLabel = new System.Windows.Forms.Label();
             this.accountPictureBox = new custom.RoundedPictureBox();
@@ -64,6 +73,11 @@
             this.PANEL_HEADER = new System.Windows.Forms.Panel();
             this.functionLabel = new System.Windows.Forms.Label();
             this.titleLabel = new System.Windows.Forms.Label();
+            this.roundedButton2 = new roundedCorners.roundedButton();
+            this.roundedButton1 = new roundedCorners.roundedButton();
+            this.settings_TemporaryButton = new roundedCorners.roundedButton();
+            this.libraryTemporary_Button = new roundedCorners.roundedButton();
+            this.bookAdd_TemporaryButton = new roundedCorners.roundedButton();
             this.PANEL_SIDEBAR.SuspendLayout();
             this.LAYOUT_account.SuspendLayout();
             this.LAYOUT_viewButton.SuspendLayout();
@@ -104,7 +118,153 @@
             this.PANEL_SIDEBAR.Size = new System.Drawing.Size(80, 1080);
             this.PANEL_SIDEBAR.TabIndex = 3;
             // 
-            // LAYOUT_LINE3
+            // sidebarButton7
+            // 
+            this.sidebarButton7.BackColor = System.Drawing.Color.MediumSlateBlue;
+            this.sidebarButton7.BackgroundColor = System.Drawing.Color.MediumSlateBlue;
+            this.sidebarButton7.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.sidebarButton7.BorderRadius = 10;
+            this.sidebarButton7.BorderSize = 0;
+            this.sidebarButton7.ButtonImage = global::Archivary.Properties.Resources.ArchivaryLogoGreen;
+            this.sidebarButton7.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.sidebarButton7.FlatAppearance.BorderSize = 0;
+            this.sidebarButton7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.sidebarButton7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.sidebarButton7.ForeColor = System.Drawing.SystemColors.Window;
+            this.sidebarButton7.Location = new System.Drawing.Point(10, 960);
+            this.sidebarButton7.Name = "sidebarButton7";
+            this.sidebarButton7.Padding = new System.Windows.Forms.Padding(100, 0, 0, 0);
+            this.sidebarButton7.Size = new System.Drawing.Size(300, 100);
+            this.sidebarButton7.TabIndex = 12;
+            this.sidebarButton7.Text = "Log Out";
+            this.sidebarButton7.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.sidebarButton7.TextColor = System.Drawing.SystemColors.Window;
+            this.sidebarButton7.UseVisualStyleBackColor = false;
+            // 
+            // panel3
+            // 
+            this.panel3.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panel3.Location = new System.Drawing.Point(10, 1060);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(300, 20);
+            this.panel3.TabIndex = 11;
+            // 
+            // sidebarButton5
+            // 
+            this.sidebarButton5.BackColor = System.Drawing.Color.MediumSlateBlue;
+            this.sidebarButton5.BackgroundColor = System.Drawing.Color.MediumSlateBlue;
+            this.sidebarButton5.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.sidebarButton5.BorderRadius = 10;
+            this.sidebarButton5.BorderSize = 0;
+            this.sidebarButton5.ButtonImage = global::Archivary.Properties.Resources.ArchivaryLogoGreen;
+            this.sidebarButton5.Dock = System.Windows.Forms.DockStyle.Top;
+            this.sidebarButton5.FlatAppearance.BorderSize = 0;
+            this.sidebarButton5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.sidebarButton5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.sidebarButton5.ForeColor = System.Drawing.SystemColors.Window;
+            this.sidebarButton5.Location = new System.Drawing.Point(10, 380);
+            this.sidebarButton5.Name = "sidebarButton5";
+            this.sidebarButton5.Padding = new System.Windows.Forms.Padding(100, 0, 0, 0);
+            this.sidebarButton5.Size = new System.Drawing.Size(300, 60);
+            this.sidebarButton5.TabIndex = 9;
+            this.sidebarButton5.Text = "Settings";
+            this.sidebarButton5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.sidebarButton5.TextColor = System.Drawing.SystemColors.Window;
+            this.sidebarButton5.UseVisualStyleBackColor = false;
+            // 
+            // sidebarButton4
+            // 
+            this.sidebarButton4.BackColor = System.Drawing.Color.MediumSlateBlue;
+            this.sidebarButton4.BackgroundColor = System.Drawing.Color.MediumSlateBlue;
+            this.sidebarButton4.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.sidebarButton4.BorderRadius = 10;
+            this.sidebarButton4.BorderSize = 0;
+            this.sidebarButton4.ButtonImage = global::Archivary.Properties.Resources.ArchivaryLogoGreen;
+            this.sidebarButton4.Dock = System.Windows.Forms.DockStyle.Top;
+            this.sidebarButton4.FlatAppearance.BorderSize = 0;
+            this.sidebarButton4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.sidebarButton4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.sidebarButton4.ForeColor = System.Drawing.SystemColors.Window;
+            this.sidebarButton4.Location = new System.Drawing.Point(10, 320);
+            this.sidebarButton4.Name = "sidebarButton4";
+            this.sidebarButton4.Padding = new System.Windows.Forms.Padding(100, 0, 0, 0);
+            this.sidebarButton4.Size = new System.Drawing.Size(300, 60);
+            this.sidebarButton4.TabIndex = 8;
+            this.sidebarButton4.Text = "Reports";
+            this.sidebarButton4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.sidebarButton4.TextColor = System.Drawing.SystemColors.Window;
+            this.sidebarButton4.UseVisualStyleBackColor = false;
+            // 
+            // sidebarButton3
+            // 
+            this.sidebarButton3.BackColor = System.Drawing.Color.MediumSlateBlue;
+            this.sidebarButton3.BackgroundColor = System.Drawing.Color.MediumSlateBlue;
+            this.sidebarButton3.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.sidebarButton3.BorderRadius = 10;
+            this.sidebarButton3.BorderSize = 0;
+            this.sidebarButton3.ButtonImage = global::Archivary.Properties.Resources.ArchivaryLogoGreen;
+            this.sidebarButton3.Dock = System.Windows.Forms.DockStyle.Top;
+            this.sidebarButton3.FlatAppearance.BorderSize = 0;
+            this.sidebarButton3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.sidebarButton3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.sidebarButton3.ForeColor = System.Drawing.SystemColors.Window;
+            this.sidebarButton3.Location = new System.Drawing.Point(10, 260);
+            this.sidebarButton3.Name = "sidebarButton3";
+            this.sidebarButton3.Padding = new System.Windows.Forms.Padding(100, 0, 0, 0);
+            this.sidebarButton3.Size = new System.Drawing.Size(300, 60);
+            this.sidebarButton3.TabIndex = 7;
+            this.sidebarButton3.Text = "Users";
+            this.sidebarButton3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.sidebarButton3.TextColor = System.Drawing.SystemColors.Window;
+            this.sidebarButton3.UseVisualStyleBackColor = false;
+            // 
+            // sidebarButton2
+            // 
+            this.sidebarButton2.BackColor = System.Drawing.Color.MediumSlateBlue;
+            this.sidebarButton2.BackgroundColor = System.Drawing.Color.MediumSlateBlue;
+            this.sidebarButton2.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.sidebarButton2.BorderRadius = 10;
+            this.sidebarButton2.BorderSize = 0;
+            this.sidebarButton2.ButtonImage = global::Archivary.Properties.Resources.ArchivaryLogoGreen;
+            this.sidebarButton2.Dock = System.Windows.Forms.DockStyle.Top;
+            this.sidebarButton2.FlatAppearance.BorderSize = 0;
+            this.sidebarButton2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.sidebarButton2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.sidebarButton2.ForeColor = System.Drawing.SystemColors.Window;
+            this.sidebarButton2.Location = new System.Drawing.Point(10, 200);
+            this.sidebarButton2.Name = "sidebarButton2";
+            this.sidebarButton2.Padding = new System.Windows.Forms.Padding(100, 0, 0, 0);
+            this.sidebarButton2.Size = new System.Drawing.Size(300, 60);
+            this.sidebarButton2.TabIndex = 6;
+            this.sidebarButton2.Text = "Circulations";
+            this.sidebarButton2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.sidebarButton2.TextColor = System.Drawing.SystemColors.Window;
+            this.sidebarButton2.UseVisualStyleBackColor = false;
+            // 
+            // sidebarButton1
+            // 
+            this.sidebarButton1.BackColor = System.Drawing.Color.MediumSlateBlue;
+            this.sidebarButton1.BackgroundColor = System.Drawing.Color.MediumSlateBlue;
+            this.sidebarButton1.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.sidebarButton1.BorderRadius = 10;
+            this.sidebarButton1.BorderSize = 0;
+            this.sidebarButton1.ButtonImage = global::Archivary.Properties.Resources.ArchivaryLogoGreen;
+            this.sidebarButton1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.sidebarButton1.FlatAppearance.BorderSize = 0;
+            this.sidebarButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.sidebarButton1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.sidebarButton1.ForeColor = System.Drawing.SystemColors.Window;
+            this.sidebarButton1.Location = new System.Drawing.Point(10, 140);
+            this.sidebarButton1.Name = "sidebarButton1";
+            this.sidebarButton1.Padding = new System.Windows.Forms.Padding(100, 0, 0, 0);
+            this.sidebarButton1.Size = new System.Drawing.Size(300, 60);
+            this.sidebarButton1.TabIndex = 5;
+            this.sidebarButton1.Text = "Library";
+            this.sidebarButton1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.sidebarButton1.TextColor = System.Drawing.SystemColors.Window;
+            this.sidebarButton1.UseVisualStyleBackColor = false;
+            // 
+            // panel2
             // 
             this.LAYOUT_LINE3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
             this.LAYOUT_LINE3.Dock = System.Windows.Forms.DockStyle.Bottom;
@@ -511,7 +671,83 @@
             this.PANEL_CONTAINER.Size = new System.Drawing.Size(1837, 1030);
             this.PANEL_CONTAINER.TabIndex = 2;
             // 
-            // PANEL_CONTENTS
+            // roundedButton2
+            // 
+            this.roundedButton2.BackColor = System.Drawing.Color.MediumSlateBlue;
+            this.roundedButton2.BackgroundColor = System.Drawing.Color.MediumSlateBlue;
+            this.roundedButton2.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.roundedButton2.BorderRadius = 40;
+            this.roundedButton2.BorderSize = 0;
+            this.roundedButton2.FlatAppearance.BorderSize = 0;
+            this.roundedButton2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.roundedButton2.ForeColor = System.Drawing.Color.White;
+            this.roundedButton2.Location = new System.Drawing.Point(141, 524);
+            this.roundedButton2.Name = "roundedButton2";
+            this.roundedButton2.Size = new System.Drawing.Size(210, 63);
+            this.roundedButton2.TabIndex = 6;
+            this.roundedButton2.Text = "BOOK EDIT";
+            this.roundedButton2.TextColor = System.Drawing.Color.White;
+            this.roundedButton2.UseVisualStyleBackColor = false;
+            this.roundedButton2.Click += new System.EventHandler(this.roundedButton2_Click);
+            // 
+            // roundedButton1
+            // 
+            this.roundedButton1.BackColor = System.Drawing.Color.MediumSlateBlue;
+            this.roundedButton1.BackgroundColor = System.Drawing.Color.MediumSlateBlue;
+            this.roundedButton1.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.roundedButton1.BorderRadius = 40;
+            this.roundedButton1.BorderSize = 0;
+            this.roundedButton1.FlatAppearance.BorderSize = 0;
+            this.roundedButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.roundedButton1.ForeColor = System.Drawing.Color.White;
+            this.roundedButton1.Location = new System.Drawing.Point(141, 436);
+            this.roundedButton1.Name = "roundedButton1";
+            this.roundedButton1.Size = new System.Drawing.Size(210, 63);
+            this.roundedButton1.TabIndex = 5;
+            this.roundedButton1.Text = "BOOK INFO";
+            this.roundedButton1.TextColor = System.Drawing.Color.White;
+            this.roundedButton1.UseVisualStyleBackColor = false;
+            this.roundedButton1.Click += new System.EventHandler(this.roundedButton1_Click);
+            // 
+            // settings_TemporaryButton
+            // 
+            this.settings_TemporaryButton.BackColor = System.Drawing.Color.MediumSlateBlue;
+            this.settings_TemporaryButton.BackgroundColor = System.Drawing.Color.MediumSlateBlue;
+            this.settings_TemporaryButton.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.settings_TemporaryButton.BorderRadius = 40;
+            this.settings_TemporaryButton.BorderSize = 0;
+            this.settings_TemporaryButton.FlatAppearance.BorderSize = 0;
+            this.settings_TemporaryButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.settings_TemporaryButton.ForeColor = System.Drawing.Color.White;
+            this.settings_TemporaryButton.Location = new System.Drawing.Point(227, 348);
+            this.settings_TemporaryButton.Name = "settings_TemporaryButton";
+            this.settings_TemporaryButton.Size = new System.Drawing.Size(210, 63);
+            this.settings_TemporaryButton.TabIndex = 4;
+            this.settings_TemporaryButton.Text = "SETTINGS";
+            this.settings_TemporaryButton.TextColor = System.Drawing.Color.White;
+            this.settings_TemporaryButton.UseVisualStyleBackColor = false;
+            this.settings_TemporaryButton.Click += new System.EventHandler(this.settings_TemporaryButton_Click);
+            // 
+            // libraryTemporary_Button
+            // 
+            this.libraryTemporary_Button.BackColor = System.Drawing.Color.MediumSlateBlue;
+            this.libraryTemporary_Button.BackgroundColor = System.Drawing.Color.MediumSlateBlue;
+            this.libraryTemporary_Button.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.libraryTemporary_Button.BorderRadius = 40;
+            this.libraryTemporary_Button.BorderSize = 0;
+            this.libraryTemporary_Button.FlatAppearance.BorderSize = 0;
+            this.libraryTemporary_Button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.libraryTemporary_Button.ForeColor = System.Drawing.Color.White;
+            this.libraryTemporary_Button.Location = new System.Drawing.Point(227, 283);
+            this.libraryTemporary_Button.Name = "libraryTemporary_Button";
+            this.libraryTemporary_Button.Size = new System.Drawing.Size(214, 59);
+            this.libraryTemporary_Button.TabIndex = 3;
+            this.libraryTemporary_Button.Text = "LIBRARY";
+            this.libraryTemporary_Button.TextColor = System.Drawing.Color.White;
+            this.libraryTemporary_Button.UseVisualStyleBackColor = false;
+            this.libraryTemporary_Button.Click += new System.EventHandler(this.libraryTemporary_Button_Click);
+            // 
+            // button2
             // 
             this.PANEL_CONTENTS.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
@@ -557,6 +793,24 @@
             this.titleLabel.TabIndex = 0;
             this.titleLabel.Text = "Archivary | ";
             this.titleLabel.TextAlign = System.Drawing.ContentAlignment.BottomLeft;
+            // bookAdd_TemporaryButton
+            // 
+            this.bookAdd_TemporaryButton.BackColor = System.Drawing.Color.MediumSlateBlue;
+            this.bookAdd_TemporaryButton.BackgroundColor = System.Drawing.Color.MediumSlateBlue;
+            this.bookAdd_TemporaryButton.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.bookAdd_TemporaryButton.BorderRadius = 40;
+            this.bookAdd_TemporaryButton.BorderSize = 0;
+            this.bookAdd_TemporaryButton.FlatAppearance.BorderSize = 0;
+            this.bookAdd_TemporaryButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bookAdd_TemporaryButton.ForeColor = System.Drawing.Color.White;
+            this.bookAdd_TemporaryButton.Location = new System.Drawing.Point(611, 283);
+            this.bookAdd_TemporaryButton.Name = "bookAdd_TemporaryButton";
+            this.bookAdd_TemporaryButton.Size = new System.Drawing.Size(210, 63);
+            this.bookAdd_TemporaryButton.TabIndex = 7;
+            this.bookAdd_TemporaryButton.Text = "ADD BOOK";
+            this.bookAdd_TemporaryButton.TextColor = System.Drawing.Color.White;
+            this.bookAdd_TemporaryButton.UseVisualStyleBackColor = false;
+            this.bookAdd_TemporaryButton.Click += new System.EventHandler(this.bookAdd_TemporaryButton_Click);
             // 
             // FORM_SIDEBAR
             // 
@@ -621,5 +875,19 @@
         private System.Windows.Forms.Panel PANEL_CONTENTS;
         private System.Windows.Forms.Label functionLabel;
         private System.Windows.Forms.Label titleLabel;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Panel panel1;
+        private sidebarComponents.sidebarButton sidebarButton1;
+        private System.Windows.Forms.Panel panel3;
+        private sidebarComponents.sidebarButton sidebarButton5;
+        private sidebarComponents.sidebarButton sidebarButton4;
+        private sidebarComponents.sidebarButton sidebarButton3;
+        private sidebarComponents.sidebarButton sidebarButton2;
+        private sidebarComponents.sidebarButton sidebarButton7;
+        private roundedCorners.roundedButton libraryTemporary_Button;
+        private roundedCorners.roundedButton settings_TemporaryButton;
+        private roundedCorners.roundedButton roundedButton1;
+        private roundedCorners.roundedButton roundedButton2;
+        private roundedCorners.roundedButton bookAdd_TemporaryButton;
     }
 }
