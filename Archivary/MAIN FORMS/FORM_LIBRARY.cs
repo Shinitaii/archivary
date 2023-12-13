@@ -7,8 +7,10 @@ using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.Window;
 
 namespace Archivary.PARENT_FORMS
 {
@@ -18,6 +20,7 @@ namespace Archivary.PARENT_FORMS
         private int buttonWidth1;
         private Button buttonize;
         private bookDetails bookInfo;
+       
 
         //
         // COLOR METHODS
@@ -41,84 +44,68 @@ namespace Archivary.PARENT_FORMS
         public FORM_LIBRARY()
         {
             InitializeComponent();
+            SetStyle(ControlStyles.DoubleBuffer | ControlStyles.AllPaintingInWmPaint | ControlStyles.UserPaint, true);
+            UpdateStyles();
         }
 
-        private void FORM_LIBRARY_Load(object sender, EventArgs e)
+        private async void FORM_LIBRARY_Load(object sender, EventArgs e)
         {
-            CreateButtons1();
             dropdownProperties();
+            LoadListAsync();
         }
 
         private void FORM_LIBRARY_Resize(object sender, EventArgs e)
         {
-            CreateButtons1();
+            LoadListAsync();
         }
-
-        private void CreateButtons1()
-        {
-            libraryList.Controls.Clear(); // Clear existing controls
-
-            int maxButtons = 7;
-            int total = 0;
-
-            buttonWidth = ((libraryList.ClientSize.Width - SystemInformation.VerticalScrollBarWidth) / 2) - 20; //( -20 <-- this is padding size)
-            buttonWidth1 = (libraryList.ClientSize.Width / 2) - 20; //( -20 <-- this is padding size)
-
-            // Adjust padding to provide space at the bottom
-            libraryList.Padding = new Padding(0, 0, 0, 10);
-
-            for (int i = 1; i <= maxButtons; i++)
+        private async Task LoadListAsync()
+        {   
+            await Task.Run(() =>
             {
-                bookInfo = new bookDetails();
-                bookInfo.Text = "Button " + i;
-                bookInfo.Height = 200;
-                bookInfo.Margin = new Padding(10);
-                libraryList.Controls.Add(bookInfo);
-                total += i;
-                if (maxButtons <= 4)
+                Task.Delay(500).Wait();
+                libraryList.Controls.Clear(); // Clear existing controls
+
+                buttonWidth = ((libraryList.ClientSize.Width - SystemInformation.VerticalScrollBarWidth) / 2) - 20;
+                buttonWidth1 = (libraryList.ClientSize.Width / 2) - 20;
+
+                int maxButtons = 100;
+
+                // Adjust padding to provide space at the bottom
+                libraryList.Padding = new Padding(0, 0, 0, 10);
+
+
+                for (int i = 0; i < maxButtons; i++)
                 {
-                    bookInfo.Width = buttonWidth1;
+                    CreateButtons1Async(i, maxButtons);
+                    Task.Delay(200);
                 }
-                else if (maxButtons > 4)
-                {
-                    bookInfo.Width = buttonWidth;
-                }
+            });
+        }
+        private async Task CreateButtons1Async(int i, int maxButtons)
+        {
+            if (libraryList.InvokeRequired)
+            {
+                libraryList.BeginInvoke(new MethodInvoker(() => CreateButtons1Async(i, maxButtons)));
+                return;
+            }
+
+            //int total = 0;
+
+            bookInfo = new bookDetails();
+            bookInfo.Text = "Button " + i;
+            bookInfo.Height = 200;
+            bookInfo.Margin = new Padding(10);
+            libraryList.Controls.Add(bookInfo);
+            //total += i;
+            if (maxButtons <= 4)
+            {
+                bookInfo.Width = buttonWidth1;
+            }
+            else if (maxButtons > 4)
+            {
+                bookInfo.Width = buttonWidth;
             }
         }
-
-        private void CreateButtons()
-        {
-            libraryList.Controls.Clear(); // Clear existing controls
-
-            int maxButtons = 20;
-            int total = 0;
-
-            buttonWidth = ((libraryList.ClientSize.Width - SystemInformation.VerticalScrollBarWidth) / 2) - 20; //( -20 <-- this is padding size)
-            buttonWidth1 = (libraryList.ClientSize.Width / 2) - 20; //( -20 <-- this is padding size)
-
-            // Adjust padding to provide space at the bottom
-            libraryList.Padding = new Padding(0, 0, 0, 10);
-
-            for (int i = 1; i <= maxButtons; i++)
-            {
-                buttonize = new Button();
-                buttonize.Text = "Button " + i;
-                buttonize.Height = 200;
-                buttonize.Margin = new Padding(10);
-                buttonize.BackColor = Color.Gainsboro;
-                libraryList.Controls.Add(buttonize);
-                total += i;
-                if (maxButtons <= 4)
-                {
-                    buttonize.Width = buttonWidth1;
-                }
-                else if (maxButtons > 4)
-                {
-                    buttonize.Width = buttonWidth;
-                }
-            }
-        }
-
         private void dropdownProperties()
         {
             filterDropdown.IsMainMenu = true;
@@ -190,5 +177,9 @@ namespace Archivary.PARENT_FORMS
             filterSearchButton.Text = "ISBN";
         }
 
+        private void libraryList_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }
