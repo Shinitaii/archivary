@@ -20,6 +20,10 @@ namespace Archivary.PARENT_FORMS
         private int buttonWidth1;
         private Button buttonize;
         private bookDetails bookInfo;
+        private int start = 0;
+        private int end = 0;
+        private int max = 0;
+        private int pagesToAdd = 10;
        
 
         //
@@ -68,7 +72,7 @@ namespace Archivary.PARENT_FORMS
                 buttonWidth = ((libraryList.ClientSize.Width - SystemInformation.VerticalScrollBarWidth) / 2) - 20;
                 buttonWidth1 = (libraryList.ClientSize.Width / 2) - 20;
 
-                int maxButtons = 100;
+                int maxButtons = 10;
 
                 // Adjust padding to provide space at the bottom
                 libraryList.Padding = new Padding(0, 0, 0, 10);
