@@ -23,8 +23,9 @@ namespace Archivary.PARENT_FORMS
         private int start = 0;
         private int end = 0;
         private int max = 0;
-        private int pagesToAdd = 10;
-       
+        private int pagesToAdd = 6;
+        private int[] ints;
+
 
         //
         // COLOR METHODS
@@ -55,60 +56,83 @@ namespace Archivary.PARENT_FORMS
         private async void FORM_LIBRARY_Load(object sender, EventArgs e)
         {
             dropdownProperties();
-            LoadListAsync();
+
+            //Subscribe to both
+            libraryList.Scroll += libraryList_Scroll;
+            libraryList.MouseWheel += libraryList_MouseWheel;
+
+            //load first list
+            ints = new int[100]; //Sample data to be loaded
+            max = ints.Length;
+
+            await LoadListAsync();
         }
 
         private void FORM_LIBRARY_Resize(object sender, EventArgs e)
         {
+            libraryList.Controls.Clear();
+            start = 0;
+            end = 0;
+     
             LoadListAsync();
+            
         }
         private async Task LoadListAsync()
-        {   
-            await Task.Run(() =>
+        {
+            await Task.Run(async () =>
             {
-                Task.Delay(500).Wait();
-                libraryList.Controls.Clear(); // Clear existing controls
+                Task.Delay(1000).Wait();
+                if (start == 0)
+                {
+                    libraryList.Controls.Clear();
+                }
 
                 buttonWidth = ((libraryList.ClientSize.Width - SystemInformation.VerticalScrollBarWidth) / 2) - 20;
                 buttonWidth1 = (libraryList.ClientSize.Width / 2) - 20;
 
-                int maxButtons = 10;
-
                 // Adjust padding to provide space at the bottom
                 libraryList.Padding = new Padding(0, 0, 0, 10);
 
-
-                for (int i = 0; i < maxButtons; i++)
+                if (start < max)
                 {
-                    CreateButtons1Async(i, maxButtons);
-                    Task.Delay(200);
+                    if (start == 0) end = 8; // If start is less than the initially loaded books, load 8 books
+                    else if (start > 0) end = start + pagesToAdd; // Otherwise, add the intended pages to be loaded
+
+                    if (end > max) end = max; // Check if the end will be greater than the max number of items
+
+                    for (int i = start; i < end; i++)
+                    {
+                        Task.Delay(5000);
+                        CreateButtonsAsync(i);
+                    }
+                    start = end;
                 }
             });
         }
-        private async Task CreateButtons1Async(int i, int maxButtons)
+        private async Task CreateButtonsAsync(int i)
         {
+            //Marshal task to go back to the thread that handles the ui
             if (libraryList.InvokeRequired)
             {
-                libraryList.BeginInvoke(new MethodInvoker(() => CreateButtons1Async(i, maxButtons)));
+                libraryList.BeginInvoke(new MethodInvoker(() => CreateButtonsAsync(i)));
                 return;
             }
 
-            //int total = 0;
-
             bookInfo = new bookDetails();
-            bookInfo.Text = "Button " + i;
+            bookInfo.setLabel("New book " + i);
             bookInfo.Height = 200;
             bookInfo.Margin = new Padding(10);
             libraryList.Controls.Add(bookInfo);
             //total += i;
-            if (maxButtons <= 4)
+            if (max <= 4)
             {
                 bookInfo.Width = buttonWidth1;
             }
-            else if (maxButtons > 4)
+            else if (max > 4)
             {
                 bookInfo.Width = buttonWidth;
             }
+            
         }
         private void dropdownProperties()
         {
@@ -184,6 +208,32 @@ namespace Archivary.PARENT_FORMS
         private void libraryList_Paint(object sender, PaintEventArgs e)
         {
 
+        }
+
+        //Scroll events to load other data
+        private void libraryList_Scroll(object sender, ScrollEventArgs e)
+        {
+           
+            CheckIfAtBottom();
+        }
+        private void libraryList_MouseWheel(object sender, MouseEventArgs e)
+        {
+            
+            CheckIfAtBottom();
+        }
+
+        private async Task CheckIfAtBottom()
+        {   
+            FlowLayoutPanel libraryList = this.libraryList;
+            int visibleHeight = libraryList.ClientSize.Height;
+            int totalHeigth = libraryList.VerticalScroll.Value + visibleHeight;
+
+            if (totalHeigth >= (libraryList.VerticalScroll.Maximum - (bookInfo.Height * 2)) && libraryList.VerticalScroll.Visible && libraryList.Visible)
+            {
+                //MessageBox.Show("You reached end");
+                LoadListAsync();
+            }
+          
         }
     }
 }

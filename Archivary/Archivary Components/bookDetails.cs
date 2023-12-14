@@ -16,10 +16,12 @@ namespace Archivary.Archivary_Components
     public partial class bookDetails : UserControl
     {
         private FORM_BOOKINFO formInfo = new FORM_BOOKINFO();
+       
 
         public bookDetails()
         {
             InitializeComponent();
+            
         }
 
         #region Properties
@@ -80,7 +82,10 @@ namespace Archivary.Archivary_Components
         }
 
         #endregion
-
+        public void setLabel(string value)
+        {
+            bookTitleLabel.Text = value;
+        }
         private void viewButton_Click(object sender, EventArgs e)
         {
             formInfo.ShowDialog();
