@@ -37,7 +37,6 @@
             this.LAYOUT_searchBar = new RoundedCorners.RoundedPanel();
             this.searchBar = new RoundedCorners.RoundedTextBox();
             this.filterDropdown = new CustomDropdown.DropdownMenu(this.components);
-            this.allToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.bookNameToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.authorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.categoryToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -157,7 +156,6 @@
             this.filterDropdown.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.filterDropdown.IsMainMenu = false;
             this.filterDropdown.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.allToolStripMenuItem,
             this.bookNameToolStripMenuItem,
             this.authorToolStripMenuItem,
             this.categoryToolStripMenuItem,
@@ -167,47 +165,40 @@
             this.filterDropdown.MenuItemTextColor = System.Drawing.Color.Empty;
             this.filterDropdown.Name = "dropdownMenu1";
             this.filterDropdown.PrimaryColor = System.Drawing.Color.Empty;
-            this.filterDropdown.Size = new System.Drawing.Size(137, 136);
-            // 
-            // allToolStripMenuItem
-            // 
-            this.allToolStripMenuItem.Name = "allToolStripMenuItem";
-            this.allToolStripMenuItem.Size = new System.Drawing.Size(136, 22);
-            this.allToolStripMenuItem.Text = "All";
-            this.allToolStripMenuItem.Click += new System.EventHandler(this.allToolStripMenuItem_Click);
+            this.filterDropdown.Size = new System.Drawing.Size(157, 124);
             // 
             // bookNameToolStripMenuItem
             // 
             this.bookNameToolStripMenuItem.Name = "bookNameToolStripMenuItem";
-            this.bookNameToolStripMenuItem.Size = new System.Drawing.Size(136, 22);
+            this.bookNameToolStripMenuItem.Size = new System.Drawing.Size(156, 24);
             this.bookNameToolStripMenuItem.Text = "Book Name";
             this.bookNameToolStripMenuItem.Click += new System.EventHandler(this.bookNameToolStripMenuItem_Click);
             // 
             // authorToolStripMenuItem
             // 
             this.authorToolStripMenuItem.Name = "authorToolStripMenuItem";
-            this.authorToolStripMenuItem.Size = new System.Drawing.Size(136, 22);
+            this.authorToolStripMenuItem.Size = new System.Drawing.Size(156, 24);
             this.authorToolStripMenuItem.Text = "Author";
             this.authorToolStripMenuItem.Click += new System.EventHandler(this.authorToolStripMenuItem_Click);
             // 
             // categoryToolStripMenuItem
             // 
             this.categoryToolStripMenuItem.Name = "categoryToolStripMenuItem";
-            this.categoryToolStripMenuItem.Size = new System.Drawing.Size(136, 22);
+            this.categoryToolStripMenuItem.Size = new System.Drawing.Size(156, 24);
             this.categoryToolStripMenuItem.Text = "Category";
             this.categoryToolStripMenuItem.Click += new System.EventHandler(this.categoryToolStripMenuItem_Click);
             // 
             // genreToolStripMenuItem
             // 
             this.genreToolStripMenuItem.Name = "genreToolStripMenuItem";
-            this.genreToolStripMenuItem.Size = new System.Drawing.Size(136, 22);
+            this.genreToolStripMenuItem.Size = new System.Drawing.Size(156, 24);
             this.genreToolStripMenuItem.Text = "Genre";
             this.genreToolStripMenuItem.Click += new System.EventHandler(this.genreToolStripMenuItem_Click);
             // 
             // ISBNToolStripMenuItem
             // 
             this.ISBNToolStripMenuItem.Name = "ISBNToolStripMenuItem";
-            this.ISBNToolStripMenuItem.Size = new System.Drawing.Size(136, 22);
+            this.ISBNToolStripMenuItem.Size = new System.Drawing.Size(156, 24);
             this.ISBNToolStripMenuItem.Text = "ISBN";
             this.ISBNToolStripMenuItem.Click += new System.EventHandler(this.ISBNToolStripMenuItem_Click);
             // 
@@ -241,7 +232,6 @@
         private sidebarComponents.RoundedSidebarButton addBookButton;
         private sidebarComponents.RoundedPictureButtonRight filterSearchButton;
         private CustomDropdown.DropdownMenu filterDropdown;
-        private System.Windows.Forms.ToolStripMenuItem allToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem bookNameToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem authorToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem categoryToolStripMenuItem;

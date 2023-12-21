@@ -1,4 +1,6 @@
 ﻿using Archivary.Archivary_Components;
+using Archivary.BACKEND.BOOK_OPERATIONS;
+using Archivary.BACKEND.OBJECTS;
 using CustomDropdown;
 using System;
 using System.Collections.Generic;
@@ -21,11 +23,11 @@ namespace Archivary.PARENT_FORMS
         private Button buttonize;
         private bookDetails bookInfo;
         private int start = 0;
-        private int end = 0;
         private int max = 0;
         private int pagesToAdd = 6;
         private int prev = -1;
-        private int[] ints;
+        Dictionary<int, Book> booksDictionary;
+        List<int> keys;
         private bool isDataLoading = false;
 
 
@@ -64,24 +66,29 @@ namespace Archivary.PARENT_FORMS
             libraryList.MouseWheel += libraryList_MouseWheel;
 
             //load first list
-            ints = new int[100]; //Sample data to be loaded
-            max = ints.Length;
+            libraryList.Controls.Clear();
+            booksDictionary = BACKEND.BOOK_OPERATIONS.Book_operation.LoadBooksFromDatabase();
+            keys = booksDictionary.Keys.ToList();
+            max = booksDictionary.Count();
+
             if (!isDataLoading)
             {
+
                isDataLoading = true;
-               LoadListAsync();
+               await LoadListAsync();
             }
         }
 
-        private void FORM_LIBRARY_Resize(object sender, EventArgs e)
+        private async void FORM_LIBRARY_Resize(object sender, EventArgs e)
         {
             start = 0;
+            pagesToAdd = 7;
             libraryList.Controls.Clear();
             
             if (!isDataLoading)
             {
                 isDataLoading = true;
-                LoadListAsync();
+                await LoadListAsync();
             }
         }
         private async Task LoadListAsync()
@@ -93,44 +100,40 @@ namespace Archivary.PARENT_FORMS
                 buttonWidth = ((libraryList.ClientSize.Width - SystemInformation.VerticalScrollBarWidth) / 2) - 20;
                 buttonWidth1 = (libraryList.ClientSize.Width / 2) - 20;
 
-
                 // Adjust padding to provide space at the bottom
                 libraryList.Padding = new Padding(0, 0, 0, 10);
 
-                if (start < max)
+                if(start <= max)
                 {
-                    if (start == 0) end = 8; // If start is less than the initially loaded books, load 8 books
-                    else if (start > 0) end = start + pagesToAdd; // Otherwise, add the intended pages to be loaded
-                    
-                    if (end > max) end = max; // Check if the end will be greater than the max number of items
-
-                    for (int i = start; i < end; i++)
+                    var booksAdded = keys.Skip(start).Take(pagesToAdd);
+                    foreach (int key in booksAdded)
                     {
-                       CreateButtonsAsync(i);
+                        Book bookAdded = booksDictionary[key];
+                        if (bookAdded != null) CreateButtonsAsync(bookAdded);
+                        start++;
                     }
-                    start = end;
+                    
                 }
+                
                 isDataLoading = false;
             });
         }
 
-        private void CreateButtonsAsync(int i)
+        private void CreateButtonsAsync(Book bookAdded)
         {
             // Marshal task to go back to the thread that handles the ui
             if (libraryList.InvokeRequired)
             {
-                libraryList.BeginInvoke(new MethodInvoker(() => CreateButtonsAsync(i)));
+                libraryList.BeginInvoke(new MethodInvoker(() => CreateButtonsAsync(bookAdded)));
                 return;
             }
 
-            if (prev != i)
+            if (bookAdded != null)
             {
-                bookInfo = new bookDetails();
-                bookInfo.setLabel("New book " + i);
+                bookInfo = new bookDetails(bookAdded);
                 bookInfo.Height = 200;
                 bookInfo.Margin = new Padding(10);
                 libraryList.Controls.Add(bookInfo);
-                prev = i;
             }
             
             if (max <= 4)
@@ -153,11 +156,14 @@ namespace Archivary.PARENT_FORMS
             Control control = (Control)sender;
             //dropdownMenu.Show(control, control.Width - dropdownMenu.Width, control.Height);
             dropdownMenu.Show(control, control.Width - control.Width, control.Height);
+            
+           
         }
 
         private void filterSearchButton_Click(object sender, EventArgs e)
         {
             openDropdownMenu(filterDropdown, sender);
+            
         }
 
         private void searchBar_Enter(object sender, EventArgs e)
@@ -168,6 +174,7 @@ namespace Archivary.PARENT_FORMS
                 searchBar.Font = new Font("Montserrat", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
                 searchBar.ForeColor = archivaryWhite();
             }
+            
         }
 
         private void searchBar_Leave(object sender, EventArgs e)
@@ -183,11 +190,7 @@ namespace Archivary.PARENT_FORMS
         //
         // DROPDOWN EVENTS
         //
-        private void allToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            filterSearchButton.Text = "All";
-        }
-
+        
         private void bookNameToolStripMenuItem_Click(object sender, EventArgs e)
         {
             filterSearchButton.Text = "Book Name";
@@ -228,21 +231,23 @@ namespace Archivary.PARENT_FORMS
             CheckIfAtBottom();   
         }
 
-        private void CheckIfAtBottom()
+        private async void CheckIfAtBottom()
         {   
             FlowLayoutPanel libraryList = this.libraryList;
-            int visibleHeight = libraryList.ClientSize.Height;
-            int totalHeigth = libraryList.VerticalScroll.Value + visibleHeight;
-
-            if (totalHeigth >= (libraryList.VerticalScroll.Maximum - (bookInfo.Height * 4)) && libraryList.VerticalScroll.Visible )
+            if (bookInfo != null && libraryList.VerticalScroll != null)
             {
-                if (!isDataLoading)
+                int visibleHeight = libraryList.ClientSize.Height;
+                int totalHeigth = libraryList.VerticalScroll.Value + visibleHeight;
+
+                if (totalHeigth >= (libraryList.VerticalScroll.Maximum - (bookInfo.Height * 4)) && libraryList.VerticalScroll.Visible)
                 {
-                    isDataLoading = true;
-                    LoadListAsync();
-                }   
+                    if (!isDataLoading)
+                    {
+                        isDataLoading = true;
+                        await LoadListAsync();
+                    }
+                }
             }
-          
         }
     }
 }
